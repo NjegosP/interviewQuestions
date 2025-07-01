@@ -2,13 +2,10 @@
 
 ---
 
-## Questions
+### 1. What is the difference between slices and arrays in Go?
 
-### 1. **What is the difference between slices and arrays in Go?**
+**Difficulty**: Easy
 
-**Difficulty**: Easy  
-**Category**: Data Structures  
-**Key Concepts**: Arrays, slices, dynamic sizing, memory allocation  
 **Sample Answer**:
 
 -   **Arrays** in Go are fixed-size collections of elements of the same type. Their size is part of the type (e.g., `[5]int`). Arrays are value types, so assigning or passing them copies the entire array.
@@ -29,11 +26,10 @@
 
 ---
 
-### 2. **What are goroutines and how do they differ from threads?**
+### 2. What are goroutines and how do they differ from threads?
 
-**Difficulty**: Medium  
-**Category**: Concurrency  
-**Key Concepts**: Goroutines, lightweight threads, scheduler, memory usage  
+**Difficulty**: Easy
+
 **Sample Answer**:
 **Goroutines** are lightweight, managed threads in Go, created using the `go` keyword. They are multiplexed onto a small number of OS threads by the Go runtime scheduler, allowing thousands of goroutines to run concurrently with low overhead (2KB stack vs. 1MB for OS threads).
 
@@ -53,11 +49,10 @@
 
 ---
 
-### 3. **Explain the concept of channels in Go and their types.**
+### 3. Explain the concept of channels in Go and their types.
 
-**Difficulty**: Medium  
-**Category**: Concurrency  
-**Key Concepts**: Channels, buffered vs unbuffered, blocking, communication  
+**Difficulty**: Easy
+
 **Sample Answer**:
 **Channels** are typed conduits for communication between goroutines. They allow safe data exchange and synchronization. Channels can be:
 
@@ -76,11 +71,10 @@ Channels are created with `make(chan Type)` and can be closed to signal no more 
 
 ---
 
-### 4. **What is the difference between `var`, `:=`, and `const` in Go?**
+### 4. What is the difference between `var`, `:=`, and `const` in Go?
 
-**Difficulty**: Easy  
-**Category**: Language Fundamentals  
-**Key Concepts**: Variable declaration, type inference, constants  
+**Difficulty**: Easy
+
 **Sample Answer**:
 
 -   `var` declares a variable, optionally with a type and initial value. If no value is given, the zero value is used.
@@ -103,11 +97,10 @@ Channels are created with `make(chan Type)` and can be closed to signal no more 
 
 ---
 
-### 5. **Explain Go's interface system and how it differs from other languages.**
+### 5. Explain Go's interface system and how it differs from other languages.
 
-**Difficulty**: Medium  
-**Category**: Object-Oriented Programming  
-**Key Concepts**: Interfaces, implicit implementation, duck typing  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Go interfaces are collections of method signatures. A type implements an interface simply by implementing its methods—no explicit declaration is needed. This is called **implicit implementation** and enables a form of duck typing: "if it walks like a duck and quacks like a duck, it's a duck."
 
@@ -127,11 +120,10 @@ Go interfaces are collections of method signatures. A type implements an interfa
 
 ---
 
-### 6. **What is the difference between `defer`, `panic`, and `recover`?**
+### 6. What is the difference between `defer`, `panic`, and `recover`?
 
-**Difficulty**: Medium  
-**Category**: Error Handling  
-**Key Concepts**: Deferred functions, panic recovery, error handling patterns  
+**Difficulty**: Easy
+
 **Sample Answer**:
 
 -   `defer` schedules a function call to run after the surrounding function returns, often used for cleanup (e.g., closing files).
@@ -154,11 +146,10 @@ Go interfaces are collections of method signatures. A type implements an interfa
 
 ---
 
-### 7. **Explain Go's memory management and garbage collection.**
+### 7. Explain Go's memory management and garbage collection.
 
-**Difficulty**: Hard  
-**Category**: Memory Management  
-**Key Concepts**: Garbage collection, memory allocation, escape analysis  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Go uses a concurrent, tri-color mark-and-sweep garbage collector. Memory is automatically managed, and the runtime determines whether variables are allocated on the stack or heap (using escape analysis). The GC runs in the background, minimizing pause times and allowing most programs to run with low-latency memory management.
 
@@ -178,11 +169,10 @@ Go uses a concurrent, tri-color mark-and-sweep garbage collector. Memory is auto
 
 ---
 
-### 8. **What are Go modules and how do they work?**
+### 8. What are Go modules and how do they work?
 
-**Difficulty**: Medium  
-**Category**: Package Management  
-**Key Concepts**: Modules, go.mod, versioning, dependency management  
+**Difficulty**: Easy
+
 **Sample Answer**:
 **Go modules** are the dependency management system introduced in Go 1.11. A module is a collection of related Go packages with a `go.mod` file at its root, specifying the module path and dependencies. Modules support semantic versioning and allow reproducible builds.
 
@@ -202,11 +192,10 @@ Go uses a concurrent, tri-color mark-and-sweep garbage collector. Memory is auto
 
 ---
 
-### 9. **Explain the difference between `sync.Mutex` and `sync.RWMutex`.**
+### 9. Explain the difference between `sync.Mutex` and `sync.RWMutex`.
 
-**Difficulty**: Medium  
-**Category**: Concurrency  
-**Key Concepts**: Mutexes, read-write locks, synchronization  
+**Difficulty**: Easy
+
 **Sample Answer**:
 
 -   `sync.Mutex` provides mutual exclusion, allowing only one goroutine to access a critical section at a time.
@@ -228,11 +217,10 @@ Go uses a concurrent, tri-color mark-and-sweep garbage collector. Memory is auto
 
 ---
 
-### 10. **What is the difference between `make` and `new` in Go?**
+### 10. What is the difference between `make` and `new` in Go?
 
-**Difficulty**: Medium  
-**Category**: Memory Allocation  
-**Key Concepts**: Memory allocation, initialization, built-in functions  
+**Difficulty**: Easy
+
 **Sample Answer**:
 
 -   `new(Type)` allocates zeroed storage for a new item of type `Type` and returns a pointer to it. Used for all types.
@@ -251,11 +239,10 @@ Go uses a concurrent, tri-color mark-and-sweep garbage collector. Memory is auto
 -   [Go by Example: new](https://gobyexample.com/new)
 -   [Go by Example: make](https://gobyexample.com/make)
 
-### 11. **What is a goroutine and how does it differ from a thread?**
+### 11. What is a goroutine and how does it differ from a thread?
 
-**Difficulty**: Medium  
-**Category**: Concurrency  
-**Key Concepts**: Goroutine, thread, concurrency, lightweight, scheduler  
+**Difficulty**: Easy
+
 **Sample Answer**:
 A goroutine is a lightweight thread managed by the Go runtime. Unlike OS threads, goroutines are multiplexed onto a smaller number of system threads, making them more memory-efficient and faster to create. The Go scheduler handles their execution, allowing thousands of goroutines to run concurrently.
 
@@ -268,11 +255,10 @@ A goroutine is a lightweight thread managed by the Go runtime. Unlike OS threads
 
 ---
 
-### 12. **What is a channel in Go and how is it used?**
+### 12. What is a channel in Go and how is it used?
 
-**Difficulty**: Medium  
-**Category**: Concurrency  
-**Key Concepts**: Channel, communication, synchronization, goroutine  
+**Difficulty**: Easy
+
 **Sample Answer**:
 A channel is a typed conduit for communication between goroutines. Channels allow goroutines to send and receive values, enabling safe data exchange and synchronization. Channels can be buffered or unbuffered, and are essential for building concurrent programs in Go.
 
@@ -285,11 +271,10 @@ A channel is a typed conduit for communication between goroutines. Channels allo
 
 ---
 
-### 13. **What is a Go interface and how does it enable polymorphism?**
+### 13. What is a Go interface and how does it enable polymorphism?
 
-**Difficulty**: Medium  
-**Category**: Interfaces  
-**Key Concepts**: Interface, polymorphism, type abstraction, duck typing  
+**Difficulty**: Easy
+
 **Sample Answer**:
 A Go interface is a type that specifies a set of method signatures. Any type that implements those methods satisfies the interface, enabling polymorphism. This allows functions to accept arguments of different types as long as they implement the required methods, supporting flexible and decoupled code.
 
@@ -302,11 +287,10 @@ A Go interface is a type that specifies a set of method signatures. Any type tha
 
 ---
 
-### 14. **How does Go handle memory management and garbage collection?**
+### 14. How does Go handle memory management and garbage collection?
 
-**Difficulty**: Medium  
-**Category**: Memory Management  
-**Key Concepts**: Garbage collection, memory allocation, pointers, escape analysis  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Go uses automatic garbage collection to manage memory. The runtime tracks object references and reclaims memory that is no longer reachable. Go's garbage collector is designed for low latency and efficiency, and escape analysis determines whether variables are allocated on the stack or heap.
 
@@ -319,11 +303,10 @@ Go uses automatic garbage collection to manage memory. The runtime tracks object
 
 ---
 
-### 15. **What is a Go module and how does dependency management work?**
+### 15. What is a Go module and how does dependency management work?
 
-**Difficulty**: Medium  
-**Category**: Modules  
-**Key Concepts**: Module, dependency, go.mod, versioning  
+**Difficulty**: Easy
+
 **Sample Answer**:
 A Go module is a collection of related Go packages with versioning and dependency management. The `go.mod` file defines the module path and dependencies. Go modules enable reproducible builds and easy dependency updates using commands like `go mod tidy` and `go get`.
 
@@ -336,11 +319,10 @@ A Go module is a collection of related Go packages with versioning and dependenc
 
 ---
 
-### 16. **How does Go handle error handling and what are best practices?**
+### 16. How does Go handle error handling and what are best practices?
 
-**Difficulty**: Medium  
-**Category**: Error Handling  
-**Key Concepts**: Error, error interface, custom errors, error wrapping  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Go uses explicit error handling, where functions return error values that must be checked. The `error` interface is used for error types, and custom errors can be created. Best practices include handling errors at the appropriate level, wrapping errors for context, and avoiding panic for expected errors.
 
@@ -353,11 +335,10 @@ Go uses explicit error handling, where functions return error values that must b
 
 ---
 
-### 17. **What is a Go context and how is it used for cancellation and timeouts?**
+### 17. What is a Go context and how is it used for cancellation and timeouts?
 
-**Difficulty**: Medium  
-**Category**: Concurrency  
-**Key Concepts**: Context, cancellation, timeout, goroutine, propagation  
+**Difficulty**: Easy
+
 **Sample Answer**:
 The `context` package in Go provides a way to carry deadlines, cancellation signals, and other request-scoped values across API boundaries. Contexts are used to control goroutines, especially in servers and concurrent applications, enabling graceful shutdown and resource cleanup.
 
@@ -370,11 +351,10 @@ The `context` package in Go provides a way to carry deadlines, cancellation sign
 
 ---
 
-### 18. **How does Go's type system support composition over inheritance?**
+### 18. How does Go's type system support composition over inheritance?
 
-**Difficulty**: Medium  
-**Category**: Type System  
-**Key Concepts**: Composition, embedding, inheritance, interfaces  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Go favors composition over inheritance. Instead of class-based inheritance, Go uses struct embedding and interfaces to compose behavior. Embedding allows one struct to include another, inheriting its fields and methods, while interfaces enable polymorphism.
 
@@ -387,11 +367,10 @@ Go favors composition over inheritance. Instead of class-based inheritance, Go u
 
 ---
 
-### 19. **What is the purpose of the `defer` statement in Go?**
+### 19. What is the purpose of the `defer` statement in Go?
 
-**Difficulty**: Easy  
-**Category**: Control Flow  
-**Key Concepts**: Defer, resource cleanup, function execution order  
+**Difficulty**: Easy
+
 **Sample Answer**:
 The `defer` statement schedules a function call to run after the surrounding function returns. It is commonly used for resource cleanup, such as closing files or unlocking mutexes, ensuring cleanup code runs even if an error occurs.
 
@@ -404,11 +383,10 @@ The `defer` statement schedules a function call to run after the surrounding fun
 
 ---
 
-### 20. **How does Go support testing and what are best practices for writing tests?**
+### 20. How does Go support testing and what are best practices for writing tests?
 
-**Difficulty**: Medium  
-**Category**: Testing  
-**Key Concepts**: Testing, `testing` package, table-driven tests, coverage  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Go has built-in support for testing via the `testing` package. Tests are written in files ending with `_test.go` and use functions starting with `Test`. Best practices include writing table-driven tests, using subtests, and measuring code coverage with `go test -cover`.
 

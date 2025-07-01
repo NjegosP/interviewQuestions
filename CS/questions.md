@@ -2,13 +2,10 @@
 
 ---
 
-## Questions
+### 1. What is the difference between a stack and a queue? When would you use each?
 
-### 1. **What is the difference between a stack and a queue? When would you use each?**
+**Difficulty**: Easy
 
-**Difficulty**: Easy  
-**Category**: Data Structures  
-**Key Concepts**: LIFO vs FIFO, abstract data types, use cases  
 **Sample Answer**:
 A **stack** is a linear data structure that follows the Last-In, First-Out (LIFO) principle. The last element added is the first one to be removed. Common operations are `push` (add to top), `pop` (remove from top), and `peek` (view top element). Stacks are used in function call management (call stack), undo operations in editors, and parsing expressions.
 
@@ -27,13 +24,10 @@ A **queue** is a linear data structure that follows the First-In, First-Out (FIF
 -   [GeeksforGeeks: Stack Data Structure](https://www.geeksforgeeks.org/stack-data-structure/)
 -   [GeeksforGeeks: Queue Data Structure](https://www.geeksforgeeks.org/queue-data-structure/)
 
----
+### 2. What is the time complexity of binary search and when is it most effective?
 
-### 2. **What is the time complexity of binary search and when is it most effective?**
+**Difficulty**: Easy
 
-**Difficulty**: Easy  
-**Category**: Algorithms  
-**Key Concepts**: Time complexity, divide and conquer, sorted arrays  
 **Sample Answer**:
 **Binary search** is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing the search interval in half. If the value of the search key is less than the item in the middle, the search continues on the left half; otherwise, it continues on the right half.
 
@@ -49,14 +43,8 @@ A **queue** is a linear data structure that follows the First-In, First-Out (FIF
 -   [Wikipedia: Binary Search Algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 -   [Khan Academy: Binary Search](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
 
----
+### 3. What is the difference between a hash table and a binary search tree?
 
-### 3. **What is the difference between a hash table and a binary search tree?**
-
-**Difficulty**: Medium  
-**Category**: Data Structures  
-**Key Concepts**: Hash functions, collision resolution, tree properties, order  
-**Sample Answer**:
 A **hash table** is a data structure that maps keys to values using a hash function. It provides average-case O(1) time complexity for insert, delete, and search operations. However, hash tables do not maintain any order among elements. Collisions are handled using techniques like chaining or open addressing.
 
 A **binary search tree (BST)** is a tree data structure where each node has at most two children, and for each node, all elements in the left subtree are less, and all in the right subtree are greater. BSTs provide O(log n) average-case time complexity for insert, delete, and search if balanced, but can degrade to O(n) if unbalanced. BSTs maintain elements in sorted order, enabling in-order traversal.
@@ -74,14 +62,8 @@ A **binary search tree (BST)** is a tree data structure where each node has at m
 -   [GeeksforGeeks: Hash Table](https://www.geeksforgeeks.org/hashing-data-structure/)
 -   [GeeksforGeeks: Binary Search Tree](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
 
----
+### 4. What is the difference between a process and a thread?
 
-### 4. **What is the difference between a process and a thread?**
-
-**Difficulty**: Medium  
-**Category**: Operating Systems  
-**Key Concepts**: Process management, threading, memory isolation, concurrency  
-**Sample Answer**:
 A **process** is an independent program in execution with its own memory space, resources, and system state. Processes are isolated from each other, and communication between them requires inter-process communication (IPC) mechanisms.
 
 A **thread** is the smallest unit of execution within a process. Threads within the same process share memory and resources, making context switching between threads faster than between processes. Threads are used for parallelism within a single application, while processes are used for isolation and running multiple applications.
@@ -99,13 +81,10 @@ A **thread** is the smallest unit of execution within a process. Threads within 
 -   [Wikipedia: Process (computing)](<https://en.wikipedia.org/wiki/Process_(computing)>)
 -   [Wikipedia: Thread (computing)](<https://en.wikipedia.org/wiki/Thread_(computing)>)
 
----
+### 5. Explain how a depth-first search (DFS) works and provide a use case.
 
-### 5. **Explain how a depth-first search (DFS) works and provide a use case.**
+**Difficulty**: Easy
 
-**Difficulty**: Medium  
-**Category**: Algorithms  
-**Key Concepts**: Graph traversal, recursion, backtracking, stack  
 **Sample Answer**:
 **Depth-first search (DFS)** is an algorithm for traversing or searching tree or graph data structures. It starts at the root (or an arbitrary node) and explores as far as possible along each branch before backtracking. DFS can be implemented using recursion or an explicit stack.
 
@@ -126,13 +105,10 @@ DFS is useful when you want to explore all possible paths or need to backtrack t
 -   [GeeksforGeeks: Depth First Search](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 -   [Khan Academy: DFS](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/depth-first-search)
 
----
+### 6. What is the difference between TCP and UDP?
 
-### 6. **What is the difference between TCP and UDP?**
+**Difficulty**: Easy
 
-**Difficulty**: Medium  
-**Category**: Computer Networks  
-**Key Concepts**: Transport layer protocols, reliability, connection-oriented vs connectionless  
 **Sample Answer**:
 **TCP (Transmission Control Protocol)** is a connection-oriented protocol that ensures reliable, ordered, and error-checked delivery of data between applications. It establishes a connection before transmitting data and guarantees that data arrives in order and without duplication.
 
@@ -151,13 +127,10 @@ DFS is useful when you want to explore all possible paths or need to backtrack t
 -   [Wikipedia: TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
 -   [Wikipedia: UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol)
 
----
+### 7. Explain the concept of Big O notation and provide examples.
 
-### 7. **Explain the concept of Big O notation and provide examples.**
+**Difficulty**: Easy
 
-**Difficulty**: Easy  
-**Category**: Algorithms  
-**Key Concepts**: Algorithm analysis, asymptotic complexity, worst-case analysis  
 **Sample Answer**:
 **Big O notation** describes the upper bound of an algorithm's running time or space requirements in terms of input size (n). It provides a way to classify algorithms according to their worst-case or upper-bound performance as the input size grows.
 
@@ -179,13 +152,10 @@ Big O helps compare the efficiency of algorithms and guides the selection of the
 -   [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
 -   [Khan Academy: Big O notation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation)
 
----
+### 8. How does garbage collection work in programming languages?
 
-### 8. **How does garbage collection work in programming languages?**
+**Difficulty**: Easy
 
-**Difficulty**: Hard  
-**Category**: Programming Languages  
-**Key Concepts**: Memory management, reference counting, mark and sweep, generational GC  
 **Sample Answer**:
 **Garbage collection (GC)** is the process of automatically reclaiming memory that is no longer in use by the program. Common GC algorithms include reference counting, mark-and-sweep, and generational collection.
 
@@ -203,13 +173,10 @@ GC simplifies memory management for developers but can introduce overhead and un
 -   [Wikipedia: Garbage Collection (computer science)](<https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>)
 -   [Java Garbage Collection Basics](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
 
----
+### 9. Explain the concept of a deadlock and how to prevent it.
 
-### 9. **Explain the concept of a deadlock and how to prevent it.**
+**Difficulty**: Easy
 
-**Difficulty**: Hard  
-**Category**: Operating Systems  
-**Key Concepts**: Resource allocation, synchronization, deadlock conditions, prevention  
 **Sample Answer**:
 A **deadlock** occurs when two or more processes are each waiting for the other to release a resource, causing all to be blocked indefinitely. Four conditions must hold for a deadlock: mutual exclusion, hold and wait, no preemption, and circular wait.
 
@@ -228,13 +195,10 @@ A **deadlock** occurs when two or more processes are each waiting for the other 
 -   [Wikipedia: Deadlock](https://en.wikipedia.org/wiki/Deadlock)
 -   [GeeksforGeeks: Deadlock in Operating System](https://www.geeksforgeeks.org/deadlock-in-operating-system/)
 
----
+### 10. What is the difference between a compiler and an interpreter?
 
-### 10. **What is the difference between a compiler and an interpreter?**
+**Difficulty**: Easy
 
-**Difficulty**: Medium  
-**Category**: Programming Languages  
-**Key Concepts**: Code execution, translation, compilation vs interpretation  
 **Sample Answer**:
 A **compiler** translates the entire source code of a program into machine code before execution. The resulting executable runs directly on the hardware, leading to faster execution times. Examples: C, C++ compilers.
 
@@ -250,11 +214,10 @@ Some modern languages use a mix of both (e.g., Java uses a compiler to bytecode 
 -   [Wikipedia: Compiler](https://en.wikipedia.org/wiki/Compiler)
 -   [Wikipedia: Interpreter (computing)](<https://en.wikipedia.org/wiki/Interpreter_(computing)>)
 
-### 11. **What is dynamic programming and how does it differ from recursion and memoization?**
+### 11. What is dynamic programming and how does it differ from recursion and memoization?
 
-**Difficulty**: Hard  
-**Category**: Algorithms  
-**Key Concepts**: Overlapping subproblems, optimal substructure, memoization, tabulation  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Dynamic programming (DP) is an algorithmic technique for solving problems with overlapping subproblems and optimal substructure. It involves breaking a problem into smaller subproblems, solving each subproblem only once, and storing their solutions (usually in a table) to avoid redundant computation. DP can be implemented top-down (with recursion and memoization) or bottom-up (tabulation).
 
@@ -270,13 +233,10 @@ Dynamic programming (DP) is an algorithmic technique for solving problems with o
 -   [GeeksforGeeks: Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/)
 -   [MIT OpenCourseWare: Dynamic Programming](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-19-dynamic-programming-i-fibonacci-shortest-paths/)
 
----
+### 12. What is a graph, and what are the main types of graphs used in computer science?
 
-### 12. **What is a graph, and what are the main types of graphs used in computer science?**
+**Difficulty**: Easy
 
-**Difficulty**: Medium  
-**Category**: Data Structures  
-**Key Concepts**: Directed/undirected, weighted/unweighted, cyclic/acyclic, adjacency list/matrix  
 **Sample Answer**:
 A graph is a data structure consisting of nodes (vertices) and edges (connections between nodes). Graphs can be:
 
@@ -294,13 +254,10 @@ Graphs are represented using adjacency lists (efficient for sparse graphs) or ad
 -   [GeeksforGeeks: Graph Data Structure](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
 -   [Khan Academy: Graphs](https://www.khanacademy.org/computing/computer-science/algorithms/graphs/a/graphs)
 
----
+### 13. What is breadth-first search (BFS) and how does it differ from DFS?
 
-### 13. **What is breadth-first search (BFS) and how does it differ from DFS?**
+**Difficulty**: Easy
 
-**Difficulty**: Medium  
-**Category**: Algorithms  
-**Key Concepts**: Graph traversal, queue, level-order, shortest path  
 **Sample Answer**:
 Breadth-first search (BFS) is a graph traversal algorithm that explores all neighbors at the current depth before moving to the next level. It uses a queue to keep track of nodes to visit. BFS is ideal for finding the shortest path in unweighted graphs.
 
@@ -314,13 +271,10 @@ Breadth-first search (BFS) is a graph traversal algorithm that explores all neig
 -   [GeeksforGeeks: Breadth First Search](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 -   [Khan Academy: BFS](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/breadth-first-search)
 
----
+### 14. What is a heap, and what are its main applications?
 
-### 14. **What is a heap, and what are its main applications?**
+**Difficulty**: Easy
 
-**Difficulty**: Medium  
-**Category**: Data Structures  
-**Key Concepts**: Min-heap, max-heap, priority queue, heap property  
 **Sample Answer**:
 A heap is a specialized tree-based data structure that satisfies the heap property:
 
@@ -336,13 +290,10 @@ Heaps are commonly implemented as binary trees and are used to implement priorit
 -   [GeeksforGeeks: Heap Data Structure](https://www.geeksforgeeks.org/heap-data-structure/)
 -   [Wikipedia: Heap (data structure)](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
 
----
+### 15. What is a priority queue and how is it implemented?
 
-### 15. **What is a priority queue and how is it implemented?**
+**Difficulty**: Easy
 
-**Difficulty**: Medium  
-**Category**: Data Structures  
-**Key Concepts**: Priority queue, heap, scheduling, Dijkstra's algorithm  
 **Sample Answer**:
 A priority queue is an abstract data type where each element has a priority, and elements are served based on priority (not just insertion order). The most common implementation is a binary heap, which allows efficient insertion and removal of the highest (or lowest) priority element.
 
@@ -355,13 +306,10 @@ Applications include task scheduling, Dijkstra's shortest path algorithm, and ev
 -   [GeeksforGeeks: Priority Queue](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 -   [Introduction to Algorithms by Cormen et al.]
 
----
+### 16. What is a hash function, and what makes a good hash function?
 
-### 16. **What is a hash function, and what makes a good hash function?**
+**Difficulty**: Easy
 
-**Difficulty**: Medium  
-**Category**: Data Structures  
-**Key Concepts**: Hashing, collisions, uniform distribution, cryptographic hash  
 **Sample Answer**:
 A hash function maps input data to a fixed-size value (hash code). A good hash function distributes inputs uniformly across the output range, minimizes collisions, and is fast to compute. In cryptography, hash functions must also be irreversible and collision-resistant.
 
@@ -372,13 +320,10 @@ A hash function maps input data to a fixed-size value (hash code). A good hash f
 -   [GeeksforGeeks: Hash Functions](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
 -   [Wikipedia: Hash Function](https://en.wikipedia.org/wiki/Hash_function)
 
----
+### 17. What is a trie, and where is it used?
 
-### 17. **What is a trie, and where is it used?**
+**Difficulty**: Easy
 
-**Difficulty**: Hard  
-**Category**: Data Structures  
-**Key Concepts**: Prefix tree, string search, autocomplete, dictionary  
 **Sample Answer**:
 A trie (prefix tree) is a tree-like data structure used to store a dynamic set of strings, where each node represents a character. Tries are efficient for prefix-based searches, autocomplete, and dictionary implementations. They allow fast insertion, deletion, and prefix queries.
 
@@ -389,13 +334,10 @@ A trie (prefix tree) is a tree-like data structure used to store a dynamic set o
 -   [GeeksforGeeks: Trie Data Structure](https://www.geeksforgeeks.org/trie-insert-and-search/)
 -   [Wikipedia: Trie](https://en.wikipedia.org/wiki/Trie)
 
----
+### 18. What is a Bloom filter and what are its trade-offs?
 
-### 18. **What is a Bloom filter and what are its trade-offs?**
+**Difficulty**: Easy
 
-**Difficulty**: Hard  
-**Category**: Data Structures  
-**Key Concepts**: Probabilistic data structure, false positives, space efficiency  
 **Sample Answer**:
 A Bloom filter is a space-efficient probabilistic data structure used to test whether an element is a member of a set. It can return false positives (may say an element is in the set when it is not) but never false negatives. It uses multiple hash functions and a bit array.
 
@@ -413,13 +355,10 @@ A Bloom filter is a space-efficient probabilistic data structure used to test wh
 -   [Bloom Filters by Thomas H. Cormen](https://www.cs.dartmouth.edu/~thc/cs50/lectures/0304/0304.html)
 -   [Wikipedia: Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter)
 
----
+### 19. What is a Turing machine and why is it important in computer science?
 
-### 19. **What is a Turing machine and why is it important in computer science?**
+**Difficulty**: Easy
 
-**Difficulty**: Hard  
-**Category**: Theory of Computation  
-**Key Concepts**: Computability, automata, theoretical computer science  
 **Sample Answer**:
 A Turing machine is a mathematical model of computation that defines an abstract machine capable of simulating any algorithm. It consists of an infinite tape, a tape head, and a set of states. Turing machines are fundamental to the theory of computation, helping define what problems are computable and forming the basis for the Church-Turing thesis.
 
@@ -430,13 +369,10 @@ A Turing machine is a mathematical model of computation that defines an abstract
 -   [Introduction to the Theory of Computation by Michael Sipser](https://www.cengage.com/c/introduction-to-the-theory-of-computation-3e-sipser/9781133187790/)
 -   [Wikipedia: Turing Machine](https://en.wikipedia.org/wiki/Turing_machine)
 
----
+### 20. What is the halting problem?
 
-### 20. **What is the halting problem?**
+**Difficulty**: Easy
 
-**Difficulty**: Hard  
-**Category**: Theory of Computation  
-**Key Concepts**: Undecidability, computability, Turing machine  
 **Sample Answer**:
 The halting problem is the question of determining, from a description of an arbitrary computer program and an input, whether the program will finish running or continue forever. Alan Turing proved in 1936 that a general algorithm to solve the halting problem for all possible program-input pairs cannot exist (it is undecidable).
 

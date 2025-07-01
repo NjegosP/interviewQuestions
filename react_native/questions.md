@@ -2,13 +2,10 @@
 
 ---
 
-## Questions
+### 1. What is the difference between React Native and React for web development?
 
-### 1. **What is the difference between React Native and React for web development?**
+**Difficulty**: Easy
 
-**Difficulty**: Easy  
-**Category**: Fundamentals  
-**Key Concepts**: Cross-platform development, native components, bridge architecture  
 **Sample Answer**:
 
 -   **React** is a JavaScript library for building user interfaces for the web, rendering to the DOM using HTML elements.
@@ -30,12 +27,7 @@
 
 ---
 
-### 2. **What is the difference between Expo and React Native CLI?**
-
-**Difficulty**: Medium  
-**Category**: Development Tools  
-**Key Concepts**: Managed vs bare workflow, development experience, native modules  
-**Sample Answer**:
+### 2. What is the difference between Expo and React Native CLI?
 
 -   **Expo** is a set of tools and services built around React Native, providing a managed workflow with pre-built native modules, easy setup, and over-the-air updates. Expo Go app allows quick testing on devices.
 -   **React Native CLI** is the official command-line tool for React Native, giving full control over native code and dependencies. It requires more setup but allows custom native modules and advanced configuration.
@@ -55,11 +47,10 @@
 
 ---
 
-### 3. **Explain the concept of Flexbox in React Native and how it differs from web CSS.**
+### 3. Explain the concept of Flexbox in React Native and how it differs from web CSS.
 
-**Difficulty**: Medium  
-**Category**: Layout  
-**Key Concepts**: Flexbox, cross-platform layout, responsive design  
+**Difficulty**: Easy
+
 **Sample Answer**:
 **Flexbox** is the primary layout system in React Native. It works similarly to CSS Flexbox but with some differences:
 
@@ -83,11 +74,10 @@
 
 ---
 
-### 4. **What are React Native bridges and how do they work?**
+### 4. What are React Native bridges and how do they work?
 
-**Difficulty**: Hard  
-**Category**: Architecture  
-**Key Concepts**: JavaScript bridge, native modules, performance, new architecture  
+**Difficulty**: Easy
+
 **Sample Answer**:
 A **bridge** in React Native enables communication between JavaScript and native code (Java/Obj-C/Swift). The bridge is asynchronous and serializes data between the JS and native threads. This can introduce performance bottlenecks for frequent or large data transfers.
 
@@ -105,11 +95,10 @@ A **bridge** in React Native enables communication between JavaScript and native
 
 ---
 
-### 5. **Explain the concept of navigation in React Native and popular navigation libraries.**
+### 5. Explain the concept of navigation in React Native and popular navigation libraries.
 
-**Difficulty**: Medium  
-**Category**: Navigation  
-**Key Concepts**: Stack navigation, tab navigation, drawer navigation, React Navigation  
+**Difficulty**: Easy
+
 **Sample Answer**:
 **Navigation** in React Native is handled by libraries, the most popular being **React Navigation**. It supports:
 
@@ -133,11 +122,10 @@ A **bridge** in React Native enables communication between JavaScript and native
 
 ---
 
-### 6. **What is the difference between synchronous and asynchronous operations in React Native?**
+### 6. What is the difference between synchronous and asynchronous operations in React Native?
 
-**Difficulty**: Medium  
-**Category**: Performance  
-**Key Concepts**: JavaScript thread, native thread, blocking operations, performance optimization  
+**Difficulty**: Easy
+
 **Sample Answer**:
 
 -   **Synchronous operations** block the JavaScript thread, causing UI freezes and poor user experience. Examples: heavy computations, blocking loops.
@@ -157,11 +145,10 @@ A **bridge** in React Native enables communication between JavaScript and native
 
 ---
 
-### 7. **Explain the concept of state management in React Native apps.**
+### 7. Explain the concept of state management in React Native apps.
 
-**Difficulty**: Medium  
-**Category**: State Management  
-**Key Concepts**: Redux, Context API, local state, global state  
+**Difficulty**: Easy
+
 **Sample Answer**:
 State management in React Native can be handled in several ways:
 
@@ -185,11 +172,10 @@ State management in React Native can be handled in several ways:
 
 ---
 
-### 8. **What are React Native performance optimization techniques?**
+### 8. What are React Native performance optimization techniques?
 
-**Difficulty**: Hard  
-**Category**: Performance  
-**Key Concepts**: FlatList, memoization, image optimization, bundle size  
+**Difficulty**: Easy
+
 **Sample Answer**:
 
 -   Use **FlatList** for large lists (virtualization)
@@ -209,11 +195,10 @@ State management in React Native can be handled in several ways:
 
 ---
 
-### 9. **Explain the concept of platform-specific code in React Native.**
+### 9. Explain the concept of platform-specific code in React Native.
 
-**Difficulty**: Medium  
-**Category**: Platform Differences  
-**Key Concepts**: Platform.OS, platform-specific files, conditional rendering  
+**Difficulty**: Easy
+
 **Sample Answer**:
 React Native allows writing platform-specific code using:
 
@@ -235,11 +220,10 @@ React Native allows writing platform-specific code using:
 
 ---
 
-### 10. **What is the difference between development and production builds in React Native?**
+### 10. What is the difference between development and production builds in React Native?
 
-**Difficulty**: Medium  
-**Category**: Build Process  
-**Key Concepts**: Debug vs release builds, bundle optimization, performance differences  
+**Difficulty**: Easy
+
 **Sample Answer**:
 
 -   **Development builds** include debugging tools, hot reloading, and are not optimized for performance. They are larger and slower, but easier to debug.
@@ -258,11 +242,10 @@ React Native allows writing platform-specific code using:
 -   [React Native Docs: Hermes](https://reactnative.dev/docs/hermes)
 -   [React Native CLI Environment Setup](https://reactnative.dev/docs/environment-setup)
 
-### 11. **What is the difference between React Native and native app development?**
+### 11. What is the difference between React Native and native app development?
 
-**Difficulty**: Medium  
-**Category**: Fundamentals  
-**Key Concepts**: React Native, native development, cross-platform, performance  
+**Difficulty**: Easy
+
 **Sample Answer**:
 React Native allows you to build mobile apps using JavaScript and React, sharing code across iOS and Android. Native development uses platform-specific languages (Swift, Kotlin). React Native offers faster development and code reuse, but may have performance trade-offs for complex features.
 
@@ -275,11 +258,10 @@ React Native allows you to build mobile apps using JavaScript and React, sharing
 
 ---
 
-### 12. **How does navigation work in React Native?**
+### 12. How does navigation work in React Native?
 
-**Difficulty**: Medium  
-**Category**: Navigation  
-**Key Concepts**: Navigation, React Navigation, stack, tab, drawer  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Navigation in React Native is typically handled by libraries like React Navigation, which provides stack, tab, and drawer navigators. These allow users to move between screens and manage navigation history in a mobile-friendly way.
 
@@ -292,11 +274,10 @@ Navigation in React Native is typically handled by libraries like React Navigati
 
 ---
 
-### 13. **What is the role of the Metro bundler in React Native?**
+### 13. What is the role of the Metro bundler in React Native?
 
-**Difficulty**: Medium  
-**Category**: Tooling  
-**Key Concepts**: Metro bundler, JavaScript bundling, hot reloading  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Metro is the JavaScript bundler for React Native. It transforms and bundles JavaScript code for the app, supports hot reloading, and optimizes assets for mobile devices.
 
@@ -309,11 +290,10 @@ Metro is the JavaScript bundler for React Native. It transforms and bundles Java
 
 ---
 
-### 14. **How do you handle images and assets in React Native?**
+### 14. How do you handle images and assets in React Native?
 
-**Difficulty**: Medium  
-**Category**: Assets  
-**Key Concepts**: Images, assets, require, remote images, optimization  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Images and assets are handled using the `require` function for local files or by providing a URI for remote images. React Native optimizes images for different device resolutions and platforms.
 
@@ -326,11 +306,10 @@ Images and assets are handled using the `require` function for local files or by
 
 ---
 
-### 15. **What is the difference between controlled and uncontrolled components in React Native?**
+### 15. What is the difference between controlled and uncontrolled components in React Native?
 
-**Difficulty**: Medium  
-**Category**: Forms  
-**Key Concepts**: Controlled component, uncontrolled component, form state, refs  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Controlled components have their state managed by React, while uncontrolled components use refs to access values directly. Controlled components are preferred for complex forms and validation.
 
@@ -343,11 +322,10 @@ Controlled components have their state managed by React, while uncontrolled comp
 
 ---
 
-### 16. **How do you handle device permissions in React Native?**
+### 16. How do you handle device permissions in React Native?
 
-**Difficulty**: Medium  
-**Category**: Native APIs  
-**Key Concepts**: Permissions, native modules, react-native-permissions  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Device permissions (camera, location, etc.) are managed using native modules or libraries like `react-native-permissions`. You must request and check permissions at runtime, handling user responses appropriately for both iOS and Android.
 
@@ -360,11 +338,10 @@ Device permissions (camera, location, etc.) are managed using native modules or 
 
 ---
 
-### 17. **What is the difference between ScrollView and FlatList?**
+### 17. What is the difference between ScrollView and FlatList?
 
-**Difficulty**: Medium  
-**Category**: Lists  
-**Key Concepts**: ScrollView, FlatList, performance, virtualization  
+**Difficulty**: Easy
+
 **Sample Answer**:
 `ScrollView` renders all its children at once, suitable for small lists. `FlatList` only renders visible items, improving performance for large lists through virtualization.
 
@@ -377,11 +354,10 @@ Device permissions (camera, location, etc.) are managed using native modules or 
 
 ---
 
-### 18. **How do you handle push notifications in React Native?**
+### 18. How do you handle push notifications in React Native?
 
-**Difficulty**: Hard  
-**Category**: Notifications  
-**Key Concepts**: Push notifications, FCM, APNs, react-native-push-notification  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Push notifications are handled using services like Firebase Cloud Messaging (FCM) for Android and Apple Push Notification Service (APNs) for iOS. Libraries like `react-native-push-notification` help integrate these services and manage notification handling in the app.
 
@@ -394,11 +370,10 @@ Push notifications are handled using services like Firebase Cloud Messaging (FCM
 
 ---
 
-### 19. **How do you optimize performance in a React Native app?**
+### 19. How do you optimize performance in a React Native app?
 
-**Difficulty**: Hard  
-**Category**: Performance  
-**Key Concepts**: Performance, profiling, optimization, memory leaks  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Optimize performance by using FlatList for large lists, minimizing re-renders, using the `useMemo` and `useCallback` hooks, and profiling with tools like Flipper. Avoid memory leaks by cleaning up listeners and timers.
 
@@ -411,11 +386,10 @@ Optimize performance by using FlatList for large lists, minimizing re-renders, u
 
 ---
 
-### 20. **How do you debug a React Native app?**
+### 20. How do you debug a React Native app?
 
-**Difficulty**: Medium  
-**Category**: Debugging  
-**Key Concepts**: Debugging, Flipper, Chrome DevTools, logging  
+**Difficulty**: Easy
+
 **Sample Answer**:
 Debugging can be done using Flipper, Chrome DevTools, and built-in logging. Flipper provides advanced tools for inspecting app state, network requests, and performance.
 
