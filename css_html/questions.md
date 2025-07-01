@@ -2,9 +2,8 @@
 
 ---
 
-### 1. What is the difference between inline, block, and inline-block display properties?
+### 1. What is the difference between inline, block, and inline-block display properties? [Easy]
 
-**Difficulty**: Easy  
 **Sample Answer**:
 
 -   **Inline** elements do not start on a new line and only take up as much width as necessary. They ignore width and height properties, and padding/margin only applies horizontally. Examples: `<span>`, `<a>`, `<strong>`.
@@ -25,9 +24,8 @@
 -   [CSS Tricks: Inline vs Block](https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/)
 -   [HTML & CSS: Design and Build Websites by Jon Duckett](https://www.htmlandcssbook.com/)
 
-### 2. What is the CSS box model and how does it work?
+### 2. What is the CSS box model and how does it work? [Easy]
 
-**Difficulty**: Easy  
 **Sample Answer**:
 The **CSS box model** describes how the size of elements is calculated and how they are rendered on the page. Every element is a rectangular box consisting of:
 
@@ -49,9 +47,8 @@ The `box-sizing` property determines how width and height are calculated:
 -   [CSS Tricks: Box Sizing](https://css-tricks.com/box-sizing/)
 -   [HTML & CSS: Design and Build Websites by Jon Duckett](https://www.htmlandcssbook.com/)
 
-### 3. What is the difference between relative, absolute, fixed, and sticky positioning?
+### 3. What is the difference between relative, absolute, fixed, and sticky positioning? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 
 -   **Relative**: The element is positioned relative to its normal position. Offsets (`top`, `left`, etc.) move it from where it would normally be.
@@ -74,9 +71,8 @@ The `box-sizing` property determines how width and height are calculated:
 -   [CSS Tricks: Positioning](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
 -   [HTML & CSS: Design and Build Websites by Jon Duckett](https://www.htmlandcssbook.com/)
 
-### 4. What are CSS Grid and Flexbox, and when would you use each?
+### 4. What are CSS Grid and Flexbox, and when would you use each? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 
 -   **Flexbox** is a one-dimensional layout system for arranging items in a row or column. It excels at distributing space and aligning items within a container, making it ideal for navigation bars, toolbars, and form layouts.
@@ -97,9 +93,8 @@ The `box-sizing` property determines how width and height are calculated:
 -   [CSS Grid Garden Game](https://cssgridgarden.com/)
 -   [CSS Flexbox Froggy Game](https://flexboxfroggy.com/)
 
-### 5. What is the concept of CSS specificity and how it works?
+### 5. What is the concept of CSS specificity and how it works? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 **CSS specificity** determines which CSS rule is applied when multiple rules could apply to the same element. Specificity is calculated based on the types of selectors used:
 
@@ -118,9 +113,8 @@ The browser uses the most specific rule. If specificity is equal, the last rule 
 -   [CSS Tricks: Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 -   [HTML & CSS: Design and Build Websites by Jon Duckett](https://www.htmlandcssbook.com/)
 
-### 6. What are semantic HTML elements and why are they important?
+### 6. What are semantic HTML elements and why are they important? [Easy]
 
-**Difficulty**: Easy  
 **Sample Answer**:
 **Semantic HTML** uses elements that convey meaning about the structure and content of a web page (e.g., `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`). These elements help browsers, search engines, and assistive technologies understand the content, improving accessibility and SEO.
 
@@ -136,9 +130,8 @@ The browser uses the most specific rule. If specificity is equal, the last rule 
 -   [WebAIM: Semantic Structure](https://webaim.org/techniques/semanticstructure/)
 -   [HTML & CSS: Design and Build Websites by Jon Duckett](https://www.htmlandcssbook.com/)
 
-### 7. Explain CSS preprocessors and their benefits.
+### 7. Explain CSS preprocessors and their benefits. [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 **CSS preprocessors** like Sass and Less extend CSS with features such as variables, nesting, mixins, and functions. They allow for more maintainable, reusable, and organized code. Preprocessors are compiled into standard CSS for browsers.
 
@@ -157,9 +150,8 @@ The browser uses the most specific rule. If specificity is equal, the last rule 
 -   [Less Documentation](https://lesscss.org/)
 -   [MDN: CSS preprocessors](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor)
 
-### 8. What is the difference between localStorage and sessionStorage?
+### 8. What is the difference between localStorage and sessionStorage? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 
 -   **localStorage** stores data with no expiration date. Data persists even after the browser is closed and reopened. Shared across tabs/windows from the same origin.
@@ -174,9 +166,8 @@ Both store key-value pairs as strings and are limited in size (usually 5-10MB). 
 -   [MDN: Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 -   [HTML5 Rocks: localStorage and sessionStorage](http://www.html5rocks.com/en/tutorials/storage/intro/)
 
-### 9. Explain CSS animations and transitions. What's the difference?
+### 9. Explain CSS animations and transitions. What's the difference? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 
 -   **Transitions** allow property changes in CSS values to occur smoothly over a specified duration. They are triggered by events like hover or focus.
@@ -196,9 +187,8 @@ Both store key-value pairs as strings and are limited in size (usually 5-10MB). 
 -   [MDN: CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 -   [CSS Tricks: Animations vs Transitions](https://css-tricks.com/transitions-vs-animations/)
 
-### 10. What is responsive design and how do you implement it?
+### 10. What is responsive design and how do you implement it? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 **Responsive design** ensures that web pages look and function well on all devices and screen sizes. Key techniques include:
 
@@ -217,9 +207,8 @@ Test responsiveness using browser dev tools and real devices.
 -   [Responsive Web Design by Ethan Marcotte](https://abookapart.com/products/responsive-web-design)
 -   [Google Web Fundamentals: Responsive Web Design Basics](https://web.dev/responsive-web-design-basics/)
 
-### 11. What is the CSS box model and how does it affect layout?
+### 11. What is the CSS box model and how does it affect layout? [Easy]
 
-**Difficulty**: Easy  
 **Sample Answer**:
 The CSS box model describes how elements are rendered on the page. Every element is a rectangular box composed of content, padding, border, and margin. The total size of an element is the sum of its content, padding, border, and margin. Understanding the box model is crucial for layout, as it affects how elements are sized and spaced.
 
@@ -230,9 +219,8 @@ The CSS box model describes how elements are rendered on the page. Every element
 -   [MDN: Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
 -   [CSS Tricks: The CSS Box Model](https://css-tricks.com/the-css-box-model/)
 
-### 12. How do CSS Flexbox and Grid differ, and when should you use each?
+### 12. How do CSS Flexbox and Grid differ, and when should you use each? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 Flexbox is a one-dimensional layout system for arranging items in a row or column, while Grid is a two-dimensional system for arranging items in rows and columns. Use Flexbox for linear layouts and Grid for complex, two-dimensional layouts.
 
@@ -244,9 +232,8 @@ Flexbox is a one-dimensional layout system for arranging items in a row or colum
 -   [MDN: Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 -   [CSS Tricks: Flexbox vs Grid](https://css-tricks.com/css-grid-vs-flexbox/)
 
-### 13. What are ARIA roles and why are they important for accessibility?
+### 13. What are ARIA roles and why are they important for accessibility? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 ARIA (Accessible Rich Internet Applications) roles are attributes that define ways to make web content and applications more accessible to people with disabilities. They help screen readers and assistive technologies understand the purpose of elements, especially when semantic HTML is insufficient.
 
@@ -257,9 +244,8 @@ ARIA (Accessible Rich Internet Applications) roles are attributes that define wa
 -   [MDN: ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
 -   [WAI-ARIA Overview](https://www.w3.org/WAI/standards-guidelines/aria/)
 
-### 14. How do you create a responsive design using CSS?
+### 14. How do you create a responsive design using CSS? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 Responsive design ensures web content looks good on all devices. Use media queries to apply styles based on screen size, fluid layouts with relative units (%, em, rem), and a mobile-first approach to prioritize small screens.
 
@@ -270,9 +256,8 @@ Responsive design ensures web content looks good on all devices. Use media queri
 -   [MDN: Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 -   [CSS Tricks: Responsive Design](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
 
-### 15. What is specificity in CSS and how does it affect style application?
+### 15. What is specificity in CSS and how does it affect style application? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 Specificity determines which CSS rule is applied when multiple rules match the same element. It is calculated based on the types of selectors used (inline, ID, class, element). Higher specificity overrides lower specificity, and the cascade resolves conflicts.
 
@@ -283,9 +268,8 @@ Specificity determines which CSS rule is applied when multiple rules match the s
 -   [MDN: Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 -   [CSS Tricks: Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 
-### 16. What is the difference between absolute, relative, fixed, and sticky positioning in CSS?
+### 16. What is the difference between absolute, relative, fixed, and sticky positioning in CSS? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 
 -   **Relative**: Positioned relative to its normal position.
@@ -302,9 +286,8 @@ Each affects layout and stacking context differently.
 -   [MDN: Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 -   [CSS Tricks: Positioning](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
 
-### 17. How do you optimize CSS for performance?
+### 17. How do you optimize CSS for performance? [Hard]
 
-**Difficulty**: Hard  
 **Sample Answer**:
 Optimize CSS by minifying files, removing unused styles, using efficient selectors, and inlining critical CSS for above-the-fold content. Tools like PurgeCSS and CSSNano help automate optimization.
 
@@ -315,9 +298,8 @@ Optimize CSS by minifying files, removing unused styles, using efficient selecto
 -   [Google Web Fundamentals: Optimize CSS](https://web.dev/optimize-css-background/)
 -   [CSS Tricks: CSS Performance](https://css-tricks.com/efficiently-rendering-css/)
 
-### 18. What are custom properties (CSS variables) and how are they used?
+### 18. What are custom properties (CSS variables) and how are they used? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 CSS custom properties (variables) allow you to store values in reusable variables. They are defined with `--variable-name` and accessed with `var(--variable-name)`. They enable dynamic theming and easier maintenance.
 
@@ -328,9 +310,8 @@ CSS custom properties (variables) allow you to store values in reusable variable
 -   [MDN: Using CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 -   [CSS Tricks: CSS Variables](https://css-tricks.com/css-variables-the-var-function/)
 
-### 19. How do you make an HTML table accessible?
+### 19. How do you make an HTML table accessible? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 Use semantic elements (`<table>`, `<thead>`, `<tbody>`, `<th>`, `<td>`) and attributes like `scope` for headers. Provide captions and summaries, and use ARIA roles if needed. This helps screen readers interpret table structure.
 
@@ -341,9 +322,8 @@ Use semantic elements (`<table>`, `<thead>`, `<tbody>`, `<th>`, `<td>`) and attr
 -   [MDN: Accessible Tables](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#accessibility_concerns)
 -   [WebAIM: Creating Accessible Tables](https://webaim.org/techniques/tables/)
 
-### 20. What is the Shadow DOM and how does it relate to web components?
+### 20. What is the Shadow DOM and how does it relate to web components? [Hard]
 
-**Difficulty**: Hard  
 **Sample Answer**:
 The Shadow DOM is a web standard that enables encapsulation of DOM and CSS in web components. It allows developers to create custom elements with isolated styles and markup, preventing style leakage and conflicts.
 

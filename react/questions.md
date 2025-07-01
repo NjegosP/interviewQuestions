@@ -2,9 +2,8 @@
 
 ---
 
-### 1. Explain the difference between state and props in React?
+### 1. Explain the difference between state and props in React? [Easy]
 
-**Difficulty**: Easy  
 **Sample Answer**:
 
 -   **Props** are read-only data passed from parent to child components. They are immutable within the child and are used to configure or customize components. Props enable data flow from parent to child (unidirectional data flow).
@@ -25,9 +24,8 @@
 
 ---
 
-### 2. What are React hooks and why were they introduced?
+### 2. What are React hooks and why were they introduced? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 **React hooks** are functions that let you use state and other React features in functional components. Introduced in React 16.8, hooks allow you to manage state (`useState`), side effects (`useEffect`), context (`useContext`), and more without writing class components.
 
@@ -47,9 +45,8 @@
 
 ---
 
-### 3. Explain the useEffect hook and its dependencies array.
+### 3. Explain the useEffect hook and its dependencies array. [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 **useEffect** is a hook for performing side effects in functional components (e.g., data fetching, subscriptions, manual DOM updates). It runs after every render by default, but you can control when it runs using the dependencies array.
 
@@ -65,9 +62,8 @@
 
 ---
 
-### 4. What is the virtual DOM and how does it work?
+### 4. What is the virtual DOM and how does it work? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 The **virtual DOM** is a lightweight, in-memory representation of the real DOM. When state or props change, React creates a new virtual DOM tree, compares it to the previous one (diffing), and calculates the minimal set of changes needed. It then updates the real DOM efficiently (reconciliation).
 
@@ -87,9 +83,8 @@ The **virtual DOM** is a lightweight, in-memory representation of the real DOM. 
 
 ---
 
-### 5. Explain the concept of controlled vs uncontrolled components.
+### 5. Explain the concept of controlled vs uncontrolled components. [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 
 -   **Controlled components**: Form data is handled by React state. Input values are set via state, and changes are handled by event handlers. This makes form state predictable and easy to validate.
@@ -109,9 +104,8 @@ The **virtual DOM** is a lightweight, in-memory representation of the real DOM. 
 
 ---
 
-### 6. What is the difference between useCallback and useMemo?
+### 6. What is the difference between useCallback and useMemo? [Hard]
 
-**Difficulty**: Hard  
 **Sample Answer**:
 
 -   **useCallback** memoizes a function, returning the same function instance unless dependencies change. Useful for passing stable callbacks to child components to prevent unnecessary re-renders.
@@ -132,9 +126,8 @@ The **virtual DOM** is a lightweight, in-memory representation of the real DOM. 
 
 ---
 
-### 7. Explain React Context and when to use it?
+### 7. Explain React Context and when to use it? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 **React Context** provides a way to pass data through the component tree without having to pass props down manually at every level. It is useful for global state like themes, authentication, or language preferences.
 
@@ -156,9 +149,8 @@ The **virtual DOM** is a lightweight, in-memory representation of the real DOM. 
 
 ---
 
-### 8. What are React keys and why are they important?
+### 8. What are React keys and why are they important? [Easy]
 
-**Difficulty**: Easy  
 **Sample Answer**:
 **Keys** are unique identifiers for elements in a list. They help React identify which items have changed, been added, or removed, enabling efficient updates during reconciliation. Keys should be stable, predictable, and unique (preferably IDs, not array indices).
 
@@ -176,9 +168,8 @@ The **virtual DOM** is a lightweight, in-memory representation of the real DOM. 
 
 ---
 
-### 9. Explain the concept of React portals?
+### 9. Explain the concept of React portals? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 **React portals** allow you to render children into a DOM node outside the parent component hierarchy. This is useful for modals, tooltips, and overlays that need to visually break out of their parent container but still participate in React's event system.
 
@@ -197,9 +188,8 @@ ReactDOM.createPortal(child, container);
 
 ---
 
-### 10. What is the difference between React.memo, useMemo, and useCallback?
+### 10. What is the difference between React.memo, useMemo, and useCallback? [Hard]
 
-**Difficulty**: Hard  
 **Sample Answer**:
 
 -   **React.memo** is a higher-order component that memoizes a component, preventing re-renders if props haven't changed.
@@ -221,9 +211,8 @@ ReactDOM.createPortal(child, container);
 -   [React Docs: useCallback](https://react.dev/reference/react/useCallback)
 -   [Kent C. Dodds: When to useMemo and useCallback](https://kentcdodds.com/blog/usememo-and-usecallback)
 
-### 11. What is the Context API in React and when should you use it?
+### 11. What is the Context API in React and when should you use it? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 The Context API allows you to share state across the component tree without passing props down manually at every level. Use it for global data like themes, authentication, or user settings, but avoid overusing it for all state management.
 
@@ -236,9 +225,8 @@ The Context API allows you to share state across the component tree without pass
 
 ---
 
-### 12. What are React Portals and when would you use them?
+### 12. What are React Portals and when would you use them? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 React Portals allow you to render children into a DOM node outside the parent component hierarchy. They are useful for modals, tooltips, and overlays, ensuring correct stacking and event handling.
 
@@ -251,9 +239,8 @@ React Portals allow you to render children into a DOM node outside the parent co
 
 ---
 
-### 13. What is the difference between controlled and uncontrolled components?
+### 13. What is the difference between controlled and uncontrolled components? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 Controlled components have their form data managed by React state, while uncontrolled components use refs to access DOM values directly. Controlled components offer more control and validation, while uncontrolled components are simpler for basic use cases.
 
@@ -266,9 +253,8 @@ Controlled components have their form data managed by React state, while uncontr
 
 ---
 
-### 14. What are React Hooks and why were they introduced?
+### 14. What are React Hooks and why were they introduced? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 Hooks are functions that let you use state and lifecycle features in functional components. Introduced in React 16.8, they simplify code, avoid class components, and enable code reuse through custom hooks.
 
@@ -281,9 +267,8 @@ Hooks are functions that let you use state and lifecycle features in functional 
 
 ---
 
-### 15. What is useMemo and when should you use it?
+### 15. What is useMemo and when should you use it? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 `useMemo` is a React Hook that memoizes the result of a computation, recomputing only when dependencies change. Use it to optimize expensive calculations or prevent unnecessary re-renders of child components.
 
@@ -296,9 +281,8 @@ Hooks are functions that let you use state and lifecycle features in functional 
 
 ---
 
-### 16. What is React Suspense and how does it work?
+### 16. What is React Suspense and how does it work? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 React Suspense lets you wait for some code or data to load before rendering a component. It works with `React.lazy` for code splitting and can be used with data fetching libraries for smoother loading states.
 
@@ -311,9 +295,8 @@ React Suspense lets you wait for some code or data to load before rendering a co
 
 ---
 
-### 17. What is reconciliation in React?
+### 17. What is reconciliation in React? [Hard]
 
-**Difficulty**: Hard  
 **Sample Answer**:
 Reconciliation is the process React uses to update the DOM efficiently. It compares the new virtual DOM with the previous one, calculates the minimal set of changes, and updates the real DOM accordingly. This makes updates fast and efficient.
 
@@ -326,9 +309,8 @@ Reconciliation is the process React uses to update the DOM efficiently. It compa
 
 ---
 
-### 18. What is the difference between useEffect and useLayoutEffect?
+### 18. What is the difference between useEffect and useLayoutEffect? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 `useEffect` runs after the DOM has been painted, while `useLayoutEffect` runs synchronously after all DOM mutations but before the browser paints. Use `useLayoutEffect` for measurements or DOM manipulations that must happen before paint.
 
@@ -341,9 +323,8 @@ Reconciliation is the process React uses to update the DOM efficiently. It compa
 
 ---
 
-### 19. What is server-side rendering (SSR) in React and what are its benefits?
+### 19. What is server-side rendering (SSR) in React and what are its benefits? [Medium]
 
-**Difficulty**: Medium  
 **Sample Answer**:
 Server-side rendering (SSR) renders React components on the server and sends HTML to the client. This improves initial load performance and SEO, as content is available before JavaScript loads. Hydration attaches event listeners on the client.
 
@@ -356,9 +337,8 @@ Server-side rendering (SSR) renders React components on the server and sends HTM
 
 ---
 
-### 20. What is React Fiber?
+### 20. What is React Fiber? [Hard]
 
-**Difficulty**: Hard  
 **Sample Answer**:
 React Fiber is the new reconciliation engine in React 16+. It enables incremental rendering, better scheduling, and improved responsiveness for complex applications. Fiber breaks rendering work into units, allowing React to pause and resume rendering as needed.
 
