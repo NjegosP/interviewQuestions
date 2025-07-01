@@ -21,7 +21,7 @@
 -   Use `let` for variables that will be reassigned.
 -   Avoid `var` in modern code.
 
-**Connected Questions**: [#7: Explain the difference between `null` and `undefined` in JavaScript.], [#2: What is closure in JavaScript and how does it work?]
+**Connected Questions**: [#7](#7)
 
 **Further Reading**:
 
@@ -59,7 +59,7 @@ counter(); // 1
 counter(); // 2
 ```
 
-**Connected Questions**: [#1: Explain the difference between `var`, `let`, and `const` in JavaScript.], [#5: Explain the concept of `this` in JavaScript and how it's determined.]
+**Connected Questions**: [#1](#1), [#5](#5)
 
 **Further Reading**:
 
@@ -84,7 +84,7 @@ counter(); // 2
 -   Always use `===` for predictable, bug-free code.
 -   Use `==` only when you explicitly want type coercion and understand the rules.
 
-**Connected Questions**: [#7: Explain the difference between `null` and `undefined` in JavaScript.]
+**Connected Questions**: [#7](#7)
 
 **Further Reading**:
 
@@ -116,7 +116,7 @@ fetch('https://api.example.com/data')
 -   Use `async/await` for cleaner syntax.
 -   Always handle errors with `.catch()` or try/catch.
 
-**Connected Questions**: [#10: What is the event loop in JavaScript and how does it work?], [#6: What is event delegation and why is it useful?]
+**Connected Questions**: [#10](#10), [#6](#6)
 
 **Further Reading**:
 
@@ -142,7 +142,7 @@ fetch('https://api.example.com/data')
 
 **Changing `this`:** Use `call`, `apply`, or `bind` to set `this` explicitly.
 
-**Connected Questions**: [#2: What is closure in JavaScript and how does it work?], [#9: Explain the concept of prototypal inheritance in JavaScript.]
+**Connected Questions**: [#2](#2), [#9](#9)
 
 **Further Reading**:
 
@@ -169,7 +169,7 @@ document.getElementById('list').addEventListener('click', function (e) {
 });
 ```
 
-**Connected Questions**: [#4: What are Promises and how do they work?], [#10: What is the event loop in JavaScript and how does it work?]
+**Connected Questions**: [#4](#4), [#10](#10)
 
 **Further Reading**:
 
@@ -194,7 +194,7 @@ document.getElementById('list').addEventListener('click', function (e) {
 -   Use `null` for intentional absence of value.
 -   Use `undefined` for uninitialized variables.
 
-**Connected Questions**: [#1: Explain the difference between `var`, `let`, and `const` in JavaScript.], [#3: Explain the difference between `==` and `===` operators.]
+**Connected Questions**: [#1](#1), [#3](#3)
 
 **Further Reading**:
 
@@ -217,7 +217,7 @@ document.getElementById('list').addEventListener('click', function (e) {
 -   Use ES6 modules for modern JavaScript projects and when targeting browsers.
 -   Use CommonJS for Node.js projects or legacy code.
 
-**Connected Questions**: [#9: Explain the concept of prototypal inheritance in JavaScript.]
+**Connected Questions**: [#9](#9)
 
 **Further Reading**:
 
@@ -250,7 +250,7 @@ const dog = new Animal('Rex');
 dog.speak(); // 'Rex makes a noise.'
 ```
 
-**Connected Questions**: [#5: Explain the concept of `this` in JavaScript and how it's determined.], [#8: What are ES6 modules and how do they differ from CommonJS?]
+**Connected Questions**: [#5](#5), [#8](#8)
 
 **Further Reading**:
 
@@ -277,10 +277,179 @@ The **event loop** is the mechanism that allows JavaScript to perform non-blocki
 -   Use Promises and async/await for readable async code
 -   Avoid blocking the event loop with heavy computations
 
-**Connected Questions**: [#4: What are Promises and how do they work?], [#6: What is event delegation and why is it useful?]
+**Connected Questions**: [#4](#4), [#6](#6)
 
 **Further Reading**:
 
 -   [MDN: Event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 -   [Philip Roberts: What the heck is the event loop anyway? (video)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 -   [JavaScript.info: Event loop](https://javascript.info/event-loop)
+
+### 11. **What is event delegation in JavaScript and why is it useful?**
+
+**Difficulty**: Medium  
+**Category**: DOM  
+**Key Concepts**: Event delegation, event bubbling, performance, dynamic elements  
+**Sample Answer**:
+Event delegation is a technique where a single event listener is added to a parent element instead of multiple listeners to individual child elements. It leverages event bubbling, allowing efficient handling of events for dynamic or large lists of elements. This improves performance and simplifies code.
+
+**Connected Questions**: [#3](#3)
+
+**Further Reading**:
+
+-   [MDN: Event Delegation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_delegation)
+-   [JavaScript.info: Event Delegation](https://javascript.info/event-delegation)
+
+---
+
+### 12. **What is a closure and how is it used in JavaScript?**
+
+**Difficulty**: Medium  
+**Category**: Functions  
+**Key Concepts**: Closure, lexical scope, function factory, encapsulation  
+**Sample Answer**:
+A closure is a function that retains access to its lexical scope even when executed outside that scope. Closures are used for data privacy, function factories, and maintaining state in asynchronous code.
+
+**Connected Questions**: [#2](#2)
+
+**Further Reading**:
+
+-   [MDN: Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+-   [JavaScript.info: Closures](https://javascript.info/closure)
+
+---
+
+### 13. **What is the difference between `null` and `undefined` in JavaScript?**
+
+**Difficulty**: Easy  
+**Category**: Types  
+**Key Concepts**: null, undefined, type coercion, variable initialization  
+**Sample Answer**:
+`undefined` means a variable has been declared but not assigned a value. `null` is an assignment value that represents no value. Both are falsy, but they are used in different contexts and have different meanings in type coercion and equality checks.
+
+**Connected Questions**: [#1](#1)
+
+**Further Reading**:
+
+-   [MDN: null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
+-   [MDN: undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
+---
+
+### 14. **What is the event loop in JavaScript and how does it work?**
+
+**Difficulty**: Medium  
+**Category**: Asynchronous JavaScript  
+**Key Concepts**: Event loop, call stack, callback queue, concurrency  
+**Sample Answer**:
+The event loop is a mechanism that allows JavaScript to perform non-blocking operations by offloading tasks to the browser or Node.js APIs. The call stack executes code, while the event loop checks the callback queue and pushes callbacks onto the stack when it's empty, enabling asynchronous behavior.
+
+**Connected Questions**: [#6](#6)
+
+**Further Reading**:
+
+-   [MDN: Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
+-   [JavaScript.info: Event Loop](https://javascript.info/event-loop)
+
+---
+
+### 15. **What are Promises and how do they improve asynchronous programming?**
+
+**Difficulty**: Medium  
+**Category**: Asynchronous JavaScript  
+**Key Concepts**: Promise, async, await, callback hell, chaining  
+**Sample Answer**:
+A Promise is an object representing the eventual completion or failure of an asynchronous operation. Promises allow chaining and error handling, making asynchronous code more readable and avoiding callback hell. `async`/`await` syntax further simplifies working with Promises.
+
+**Connected Questions**: [#7](#7)
+
+**Further Reading**:
+
+-   [MDN: Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+-   [JavaScript.info: Promises](https://javascript.info/promise-basics)
+
+---
+
+### 16. **What is hoisting in JavaScript?**
+
+**Difficulty**: Easy  
+**Category**: Functions & Variables  
+**Key Concepts**: Hoisting, variable declaration, function declaration, initialization  
+**Sample Answer**:
+Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. Variable and function declarations are hoisted, but only function declarations are fully initialized. Variables declared with `let` and `const` are hoisted but not initialized.
+
+**Connected Questions**: [#4](#4)
+
+**Further Reading**:
+
+-   [MDN: Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+-   [JavaScript.info: Hoisting](https://javascript.info/hoisting)
+
+---
+
+### 17. **What is the difference between `==` and `===` in JavaScript?**
+
+**Difficulty**: Easy  
+**Category**: Types  
+**Key Concepts**: Equality, type coercion, strict equality, loose equality  
+**Sample Answer**:
+`==` is the loose equality operator that performs type coercion before comparison. `===` is the strict equality operator that checks both value and type. Using `===` is recommended to avoid unexpected results due to type coercion.
+
+**Connected Questions**: [#1](#1), [#13](#13)
+
+**Further Reading**:
+
+-   [MDN: Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+-   [JavaScript.info: Comparison](https://javascript.info/comparison)
+
+---
+
+### 18. **What is a JavaScript module and how do you use ES6 modules?**
+
+**Difficulty**: Medium  
+**Category**: Modules  
+**Key Concepts**: Module, import, export, ES6, encapsulation  
+**Sample Answer**:
+A JavaScript module is a file that encapsulates code and exports values for use in other files. ES6 modules use `import` and `export` syntax, enabling better code organization and encapsulation. Modules are loaded asynchronously in browsers and natively supported in modern JavaScript.
+
+**Connected Questions**: [#8](#8)
+
+**Further Reading**:
+
+-   [MDN: Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+-   [JavaScript.info: Modules](https://javascript.info/modules-intro)
+
+---
+
+### 19. **What is debouncing and throttling in JavaScript?**
+
+**Difficulty**: Medium  
+**Category**: Performance  
+**Key Concepts**: Debounce, throttle, performance, event handling  
+**Sample Answer**:
+Debouncing and throttling are techniques to control the rate at which a function is executed. Debouncing delays execution until a pause in events, while throttling ensures a function is called at most once in a specified period. Both improve performance for events like scrolling and resizing.
+
+**Connected Questions**: [#11](#11)
+
+**Further Reading**:
+
+-   [CSS Tricks: Debouncing and Throttling](https://css-tricks.com/debouncing-throttling-explained-examples/)
+-   [MDN: Window: resize event](https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event)
+
+---
+
+### 20. **What is the difference between `var`, `let`, and `const`?**
+
+**Difficulty**: Easy  
+**Category**: Variables  
+**Key Concepts**: var, let, const, scope, hoisting, immutability  
+**Sample Answer**:
+`var` is function-scoped and hoisted, `let` and `const` are block-scoped. `const` creates immutable bindings, while `let` allows reassignment. Prefer `let` and `const` for predictable scoping and fewer bugs.
+
+**Connected Questions**: [#16](#16)
+
+**Further Reading**:
+
+-   [MDN: var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+-   [MDN: let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+-   [MDN: const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)

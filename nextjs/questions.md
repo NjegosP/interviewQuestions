@@ -19,7 +19,7 @@
 -   SSR: Dynamic, slower per request, always up-to-date.
 -   SSG: Static, fast, scalable, may need revalidation for updates.
 
-**Connected Questions**: [#2: What is the App Router in Next.js 13+ and how does it differ from the Pages Router?], [#4: What is the difference between `getStaticProps` and `getStaticPaths`?]
+**Connected Questions**: [#2](#2), [#3](#3)
 
 **Further Reading**:
 
@@ -44,7 +44,7 @@
 -   App Router: Modern, supports server components, layouts, streaming, and advanced routing.
 -   Pages Router: Simpler, more mature, but less flexible for complex layouts.
 
-**Connected Questions**: [#1: Explain the difference between Server-Side Rendering (SSR) and Static Site Generation (SSG) in Next.js.], [#3: Explain the concept of Server Components in Next.js 13+.]
+**Connected Questions**: [#1](#1), [#3](#3)
 
 **Further Reading**:
 
@@ -65,7 +65,7 @@
 -   **Client Components** (marked with `'use client'`) can use browser APIs, state, and effects, but are sent to the client as JavaScript.
 -   Server and client components can be composed together, but server components cannot use hooks like `useState` or `useEffect`.
 
-**Connected Questions**: [#2: What is the App Router in Next.js 13+ and how does it differ from the Pages Router?]
+**Connected Questions**: [#2](#2)
 
 **Further Reading**:
 
@@ -90,7 +90,7 @@
 -   Use `getStaticProps` for static pages with data that doesn't change often.
 -   Use `getStaticPaths` for dynamic routes (e.g., blog posts, product pages) to pre-render specific paths.
 
-**Connected Questions**: [#1: Explain the difference between Server-Side Rendering (SSR) and Static Site Generation (SSG) in Next.js.]
+**Connected Questions**: [#1](#1)
 
 **Further Reading**:
 
@@ -114,7 +114,7 @@ The **Next.js Image component** (`next/image`) provides automatic image optimiza
 -   Better Core Web Vitals
 -   Automatic format conversion and optimization
 
-**Connected Questions**: [#10: What is the difference between `next build` and `next dev`?]
+**Connected Questions**: [#10](#10)
 
 **Further Reading**:
 
@@ -140,7 +140,7 @@ export default function handler(req, res) {
 }
 ```
 
-**Connected Questions**: [#7: Explain the concept of middleware in Next.js.]
+**Connected Questions**: [#7](#7)
 
 **Further Reading**:
 
@@ -163,7 +163,7 @@ export default function handler(req, res) {
 -   A/B testing
 -   URL rewrites and redirects
 
-**Connected Questions**: [#6: What is API Routes in Next.js and how do you create them?]
+**Connected Questions**: [#6](#6)
 
 **Further Reading**:
 
@@ -187,7 +187,7 @@ export default function handler(req, res) {
 -   Use `next/link` for internal navigation.
 -   Use `<a>` for external links or when you need default browser behavior.
 
-**Connected Questions**: [#2: What is the App Router in Next.js 13+ and how does it differ from the Pages Router?]
+**Connected Questions**: [#2](#2)
 
 **Further Reading**:
 
@@ -218,7 +218,7 @@ module.exports = {
 };
 ```
 
-**Connected Questions**: [#10: What is the difference between `next build` and `next dev`?]
+**Connected Questions**: [#10](#10)
 
 **Further Reading**:
 
@@ -242,10 +242,176 @@ module.exports = {
 -   Use `next dev` during development for fast feedback.
 -   Use `next build` before deploying to production.
 
-**Connected Questions**: [#5: Explain Next.js Image component and its benefits.], [#9: Explain Next.js configuration and the `next.config.js` file.]
+**Connected Questions**: [#5](#5), [#9](#9)
 
 **Further Reading**:
 
 -   [Next.js Docs: next build](https://nextjs.org/docs/pages/api-reference/cli#build)
 -   [Next.js Docs: next dev](https://nextjs.org/docs/pages/api-reference/cli#development)
 -   [Vercel Blog: Next.js Build Performance](https://vercel.com/blog/nextjs-build-performance)
+
+### 11. **What is Incremental Static Regeneration (ISR) in Next.js?**
+
+**Difficulty**: Medium  
+**Category**: Data Fetching  
+**Key Concepts**: ISR, static generation, revalidation, performance  
+**Sample Answer**:
+Incremental Static Regeneration (ISR) allows you to update static content after deployment without rebuilding the entire site. Pages are regenerated in the background as traffic comes in, using the `revalidate` property in `getStaticProps`. This combines the benefits of static and dynamic rendering.
+
+**Connected Questions**: [#2](#2), [#3](#3)
+
+**Further Reading**:
+
+-   [Next.js Docs: ISR](https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration)
+-   [Vercel Blog: ISR](https://vercel.com/blog/nextjs-incremental-static-regeneration)
+
+---
+
+### 12. **How does Next.js handle image optimization?**
+
+**Difficulty**: Medium  
+**Category**: Performance  
+**Key Concepts**: Image optimization, next/image, responsive images, lazy loading  
+**Sample Answer**:
+Next.js provides the `next/image` component for automatic image optimization. It supports responsive images, lazy loading, and modern formats like WebP. Images are served in optimal sizes and formats, improving performance and user experience.
+
+**Connected Questions**: [#10](#10)
+
+**Further Reading**:
+
+-   [Next.js Docs: Image Optimization](https://nextjs.org/docs/pages/api-reference/components/image)
+-   [Vercel Blog: Image Optimization](https://vercel.com/blog/nextjs-image-optimization)
+
+---
+
+### 13. **What is middleware in Next.js and how is it used?**
+
+**Difficulty**: Medium  
+**Category**: Routing & Middleware  
+**Key Concepts**: Middleware, edge functions, request handling, redirects  
+**Sample Answer**:
+Middleware in Next.js allows you to run code before a request is completed. It can be used for authentication, redirects, logging, and more. Middleware runs at the edge, enabling fast, dynamic request handling without server round-trips.
+
+**Connected Questions**: [#4](#4)
+
+**Further Reading**:
+
+-   [Next.js Docs: Middleware](https://nextjs.org/docs/pages/building-your-application/routing/middleware)
+-   [Vercel Blog: Middleware](https://vercel.com/blog/introducing-middleware)
+
+---
+
+### 14. **How does Next.js support internationalization (i18n)?**
+
+**Difficulty**: Medium  
+**Category**: Internationalization  
+**Key Concepts**: i18n, localization, routing, translations  
+**Sample Answer**:
+Next.js has built-in support for internationalized routing and locale detection. You can define supported locales and default locale in `next.config.js`, and Next.js will handle locale-based routing and automatic language detection.
+
+**Connected Questions**: [#4](#4)
+
+**Further Reading**:
+
+-   [Next.js Docs: Internationalization](https://nextjs.org/docs/pages/building-your-application/routing/internationalization)
+-   [Vercel Blog: i18n](https://vercel.com/blog/nextjs-internationalized-routing)
+
+---
+
+### 15. **What is the difference between `getServerSideProps` and `getStaticProps`?**
+
+**Difficulty**: Medium  
+**Category**: Data Fetching  
+**Key Concepts**: SSR, SSG, data fetching, pre-rendering  
+**Sample Answer**:
+`getServerSideProps` runs on every request and enables server-side rendering (SSR), while `getStaticProps` runs at build time for static site generation (SSG). Use SSR for dynamic data and SSG for static content that doesn't change often.
+
+**Connected Questions**: [#2](#2), [#3](#3)
+
+**Further Reading**:
+
+-   [Next.js Docs: Data Fetching](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props)
+-   [Next.js Docs: Data Fetching](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-props)
+
+---
+
+### 16. **How do you use API routes in Next.js?**
+
+**Difficulty**: Medium  
+**Category**: API Routes  
+**Key Concepts**: API routes, serverless functions, backend, endpoints  
+**Sample Answer**:
+API routes in Next.js allow you to create backend endpoints as files in the `pages/api` directory. Each file exports a handler function that receives request and response objects. API routes are deployed as serverless functions, enabling full-stack development.
+
+**Connected Questions**: [#5](#5)
+
+**Further Reading**:
+
+-   [Next.js Docs: API Routes](https://nextjs.org/docs/pages/api-reference/api-routes)
+-   [Vercel Blog: API Routes](https://vercel.com/blog/nextjs-api-routes)
+
+---
+
+### 17. **How does Next.js handle static assets?**
+
+**Difficulty**: Easy  
+**Category**: Static Assets  
+**Key Concepts**: Static assets, public directory, serving files  
+**Sample Answer**:
+Static assets like images, fonts, and files are placed in the `public` directory in a Next.js project. They are served at the root URL path and can be accessed directly in your application.
+
+**Connected Questions**: [#12](#12)
+
+**Further Reading**:
+
+-   [Next.js Docs: Static File Serving](https://nextjs.org/docs/pages/building-your-application/deploying/static-file-serving)
+
+---
+
+### 18. **What is the difference between client-side and server-side navigation in Next.js?**
+
+**Difficulty**: Medium  
+**Category**: Routing  
+**Key Concepts**: Client-side navigation, server-side navigation, Link component, SPA  
+**Sample Answer**:
+Client-side navigation uses the Next.js `Link` component to navigate between pages without a full page reload, providing a single-page application (SPA) experience. Server-side navigation reloads the entire page. Client-side navigation is faster and preserves state.
+
+**Connected Questions**: [#4](#4)
+
+**Further Reading**:
+
+-   [Next.js Docs: Routing](https://nextjs.org/docs/pages/building-your-application/routing)
+-   [Vercel Blog: Client-side Navigation](https://vercel.com/blog/client-side-navigation)
+
+---
+
+### 19. **How do you handle environment variables in Next.js?**
+
+**Difficulty**: Easy  
+**Category**: Configuration  
+**Key Concepts**: Environment variables, .env, process.env, configuration  
+**Sample Answer**:
+Next.js supports environment variables via `.env` files. Variables prefixed with `NEXT_PUBLIC_` are exposed to the browser. Access variables using `process.env.VARIABLE_NAME` in your code.
+
+**Connected Questions**: [#10](#10)
+
+**Further Reading**:
+
+-   [Next.js Docs: Environment Variables](https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables)
+
+---
+
+### 20. **How do you deploy a Next.js application?**
+
+**Difficulty**: Easy  
+**Category**: Deployment  
+**Key Concepts**: Deployment, Vercel, static export, serverless  
+**Sample Answer**:
+Next.js applications can be deployed to Vercel, which offers seamless integration and serverless deployment. You can also deploy to other platforms using Docker, static export, or custom servers.
+
+**Connected Questions**: [#10](#10)
+
+**Further Reading**:
+
+-   [Next.js Docs: Deployment](https://nextjs.org/docs/pages/building-your-application/deploying)
+-   [Vercel Docs: Deploying Next.js](https://vercel.com/docs/concepts/deployments/overview)
