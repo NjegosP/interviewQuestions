@@ -4,8 +4,6 @@
 
 ### 1. What is the difference between inline, block, and inline-block display properties? [Easy]
 
-**Sample Answer**:
-
 -   **Inline** elements do not start on a new line and only take up as much width as necessary. They ignore width and height properties, and padding/margin only applies horizontally. Examples: `<span>`, `<a>`, `<strong>`.
 -   **Block** elements start on a new line and take up the full width available. They respect width, height, margin, and padding in all directions. Examples: `<div>`, `<p>`, `<h1>`.
 -   **Inline-block** elements are like inline elements in that they do not start on a new line, but they respect width, height, margin, and padding in all directions. Useful for creating layouts where elements need to sit next to each other but still have box-like properties.
@@ -26,7 +24,6 @@
 
 ### 2. What is the CSS box model and how does it work? [Easy]
 
-**Sample Answer**:
 The **CSS box model** describes how the size of elements is calculated and how they are rendered on the page. Every element is a rectangular box consisting of:
 
 -   **Content**: The actual content (text, image, etc.)
@@ -48,8 +45,6 @@ The `box-sizing` property determines how width and height are calculated:
 -   [HTML & CSS: Design and Build Websites by Jon Duckett](https://www.htmlandcssbook.com/)
 
 ### 3. What is the difference between relative, absolute, fixed, and sticky positioning? [Medium]
-
-**Sample Answer**:
 
 -   **Relative**: The element is positioned relative to its normal position. Offsets (`top`, `left`, etc.) move it from where it would normally be.
 -   **Absolute**: The element is removed from the normal flow and positioned relative to the nearest positioned ancestor (not static). If none, it's relative to the `<html>` element.
@@ -73,8 +68,6 @@ The `box-sizing` property determines how width and height are calculated:
 
 ### 4. What are CSS Grid and Flexbox, and when would you use each? [Medium]
 
-**Sample Answer**:
-
 -   **Flexbox** is a one-dimensional layout system for arranging items in a row or column. It excels at distributing space and aligning items within a container, making it ideal for navigation bars, toolbars, and form layouts.
 -   **CSS Grid** is a two-dimensional layout system for arranging items in rows and columns. It is best for complex layouts like page grids, card layouts, and dashboards.
 
@@ -95,7 +88,6 @@ The `box-sizing` property determines how width and height are calculated:
 
 ### 5. What is the concept of CSS specificity and how it works? [Medium]
 
-**Sample Answer**:
 **CSS specificity** determines which CSS rule is applied when multiple rules could apply to the same element. Specificity is calculated based on the types of selectors used:
 
 -   Inline styles: highest specificity
@@ -115,7 +107,6 @@ The browser uses the most specific rule. If specificity is equal, the last rule 
 
 ### 6. What are semantic HTML elements and why are they important? [Easy]
 
-**Sample Answer**:
 **Semantic HTML** uses elements that convey meaning about the structure and content of a web page (e.g., `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`). These elements help browsers, search engines, and assistive technologies understand the content, improving accessibility and SEO.
 
 -   Semantic elements make code more readable and maintainable.
@@ -132,7 +123,6 @@ The browser uses the most specific rule. If specificity is equal, the last rule 
 
 ### 7. Explain CSS preprocessors and their benefits. [Medium]
 
-**Sample Answer**:
 **CSS preprocessors** like Sass and Less extend CSS with features such as variables, nesting, mixins, and functions. They allow for more maintainable, reusable, and organized code. Preprocessors are compiled into standard CSS for browsers.
 
 **Benefits:**
@@ -152,8 +142,6 @@ The browser uses the most specific rule. If specificity is equal, the last rule 
 
 ### 8. What is the difference between localStorage and sessionStorage? [Medium]
 
-**Sample Answer**:
-
 -   **localStorage** stores data with no expiration date. Data persists even after the browser is closed and reopened. Shared across tabs/windows from the same origin.
 -   **sessionStorage** stores data for the duration of the page session. Data is cleared when the tab or window is closed. Not shared across tabs/windows.
 
@@ -167,8 +155,6 @@ Both store key-value pairs as strings and are limited in size (usually 5-10MB). 
 -   [HTML5 Rocks: localStorage and sessionStorage](http://www.html5rocks.com/en/tutorials/storage/intro/)
 
 ### 9. Explain CSS animations and transitions. What's the difference? [Medium]
-
-**Sample Answer**:
 
 -   **Transitions** allow property changes in CSS values to occur smoothly over a specified duration. They are triggered by events like hover or focus.
 -   **Animations** use keyframes to define a sequence of style changes. They can run automatically, loop, or be triggered by events.
@@ -189,7 +175,6 @@ Both store key-value pairs as strings and are limited in size (usually 5-10MB). 
 
 ### 10. What is responsive design and how do you implement it? [Medium]
 
-**Sample Answer**:
 **Responsive design** ensures that web pages look and function well on all devices and screen sizes. Key techniques include:
 
 -   **Media queries**: Apply styles based on device characteristics (width, orientation, etc.)
@@ -209,7 +194,6 @@ Test responsiveness using browser dev tools and real devices.
 
 ### 11. What is the CSS box model and how does it affect layout? [Easy]
 
-**Sample Answer**:
 The CSS box model describes how elements are rendered on the page. Every element is a rectangular box composed of content, padding, border, and margin. The total size of an element is the sum of its content, padding, border, and margin. Understanding the box model is crucial for layout, as it affects how elements are sized and spaced.
 
 **Connected Questions**: [#1](#1)
@@ -221,7 +205,6 @@ The CSS box model describes how elements are rendered on the page. Every element
 
 ### 12. How do CSS Flexbox and Grid differ, and when should you use each? [Medium]
 
-**Sample Answer**:
 Flexbox is a one-dimensional layout system for arranging items in a row or column, while Grid is a two-dimensional system for arranging items in rows and columns. Use Flexbox for linear layouts and Grid for complex, two-dimensional layouts.
 
 **Connected Questions**: [#6](#6), [#7](#7)
@@ -234,7 +217,6 @@ Flexbox is a one-dimensional layout system for arranging items in a row or colum
 
 ### 13. What are ARIA roles and why are they important for accessibility? [Medium]
 
-**Sample Answer**:
 ARIA (Accessible Rich Internet Applications) roles are attributes that define ways to make web content and applications more accessible to people with disabilities. They help screen readers and assistive technologies understand the purpose of elements, especially when semantic HTML is insufficient.
 
 **Connected Questions**: [#5](#5)
@@ -246,7 +228,6 @@ ARIA (Accessible Rich Internet Applications) roles are attributes that define wa
 
 ### 14. How do you create a responsive design using CSS? [Medium]
 
-**Sample Answer**:
 Responsive design ensures web content looks good on all devices. Use media queries to apply styles based on screen size, fluid layouts with relative units (%, em, rem), and a mobile-first approach to prioritize small screens.
 
 **Connected Questions**: [#8](#8)
@@ -258,7 +239,6 @@ Responsive design ensures web content looks good on all devices. Use media queri
 
 ### 15. What is specificity in CSS and how does it affect style application? [Medium]
 
-**Sample Answer**:
 Specificity determines which CSS rule is applied when multiple rules match the same element. It is calculated based on the types of selectors used (inline, ID, class, element). Higher specificity overrides lower specificity, and the cascade resolves conflicts.
 
 **Connected Questions**: [#2](#2)
@@ -269,8 +249,6 @@ Specificity determines which CSS rule is applied when multiple rules match the s
 -   [CSS Tricks: Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 
 ### 16. What is the difference between absolute, relative, fixed, and sticky positioning in CSS? [Medium]
-
-**Sample Answer**:
 
 -   **Relative**: Positioned relative to its normal position.
 -   **Absolute**: Positioned relative to the nearest positioned ancestor.
@@ -288,7 +266,6 @@ Each affects layout and stacking context differently.
 
 ### 17. How do you optimize CSS for performance? [Hard]
 
-**Sample Answer**:
 Optimize CSS by minifying files, removing unused styles, using efficient selectors, and inlining critical CSS for above-the-fold content. Tools like PurgeCSS and CSSNano help automate optimization.
 
 **Connected Questions**: [#10](#10)
@@ -300,7 +277,6 @@ Optimize CSS by minifying files, removing unused styles, using efficient selecto
 
 ### 18. What are custom properties (CSS variables) and how are they used? [Medium]
 
-**Sample Answer**:
 CSS custom properties (variables) allow you to store values in reusable variables. They are defined with `--variable-name` and accessed with `var(--variable-name)`. They enable dynamic theming and easier maintenance.
 
 **Connected Questions**: [#9](#9)
@@ -312,7 +288,6 @@ CSS custom properties (variables) allow you to store values in reusable variable
 
 ### 19. How do you make an HTML table accessible? [Medium]
 
-**Sample Answer**:
 Use semantic elements (`<table>`, `<thead>`, `<tbody>`, `<th>`, `<td>`) and attributes like `scope` for headers. Provide captions and summaries, and use ARIA roles if needed. This helps screen readers interpret table structure.
 
 **Connected Questions**: [#13](#13)
@@ -324,7 +299,6 @@ Use semantic elements (`<table>`, `<thead>`, `<tbody>`, `<th>`, `<td>`) and attr
 
 ### 20. What is the Shadow DOM and how does it relate to web components? [Hard]
 
-**Sample Answer**:
 The Shadow DOM is a web standard that enables encapsulation of DOM and CSS in web components. It allows developers to create custom elements with isolated styles and markup, preventing style leakage and conflicts.
 
 **Connected Questions**: [#18](#18)

@@ -4,8 +4,6 @@
 
 ### 1. What is the difference between React Native and React for web development? [Easy]
 
-**Sample Answer**:
-
 -   **React** is a JavaScript library for building user interfaces for the web, rendering to the DOM using HTML elements.
 -   **React Native** is a framework for building native mobile apps using React. It renders to native components (e.g., `View`, `Text`, `Image`) instead of HTML, and uses a bridge to communicate between JavaScript and native code.
 
@@ -47,7 +45,6 @@
 
 ### 3. Explain the concept of Flexbox in React Native and how it differs from web CSS. [Easy]
 
-**Sample Answer**:
 **Flexbox** is the primary layout system in React Native. It works similarly to CSS Flexbox but with some differences:
 
 -   The default flex direction is `column` (vs `row` on the web).
@@ -72,7 +69,6 @@
 
 ### 4. What are React Native bridges and how do they work? [Easy]
 
-**Sample Answer**:
 A **bridge** in React Native enables communication between JavaScript and native code (Java/Obj-C/Swift). The bridge is asynchronous and serializes data between the JS and native threads. This can introduce performance bottlenecks for frequent or large data transfers.
 
 **New Architecture:**
@@ -91,7 +87,6 @@ A **bridge** in React Native enables communication between JavaScript and native
 
 ### 5. Explain the concept of navigation in React Native and popular navigation libraries. [Easy]
 
-**Sample Answer**:
 **Navigation** in React Native is handled by libraries, the most popular being **React Navigation**. It supports:
 
 -   **Stack navigation**: Navigating between screens in a stack (like browser history)
@@ -116,8 +111,6 @@ A **bridge** in React Native enables communication between JavaScript and native
 
 ### 6. What is the difference between synchronous and asynchronous operations in React Native? [Easy]
 
-**Sample Answer**:
-
 -   **Synchronous operations** block the JavaScript thread, causing UI freezes and poor user experience. Examples: heavy computations, blocking loops.
 -   **Asynchronous operations** (e.g., network requests, timers) run in the background, allowing the UI to remain responsive. Use `async/await`, Promises, or callbacks for async code.
 
@@ -137,7 +130,6 @@ A **bridge** in React Native enables communication between JavaScript and native
 
 ### 7. Explain the concept of state management in React Native apps. [Easy]
 
-**Sample Answer**:
 State management in React Native can be handled in several ways:
 
 -   **Local state**: Managed with `useState` or class component state, suitable for component-specific data.
@@ -162,8 +154,6 @@ State management in React Native can be handled in several ways:
 
 ### 8. What are React Native performance optimization techniques? [Easy]
 
-**Sample Answer**:
-
 -   Use **FlatList** for large lists (virtualization)
 -   Memoize expensive components with `React.memo`
 -   Optimize images (resize, compress, use `Image` component's caching)
@@ -183,7 +173,6 @@ State management in React Native can be handled in several ways:
 
 ### 9. Explain the concept of platform-specific code in React Native. [Easy]
 
-**Sample Answer**:
 React Native allows writing platform-specific code using:
 
 -   `Platform.OS` to detect the platform (`ios` or `android`)
@@ -206,8 +195,6 @@ React Native allows writing platform-specific code using:
 
 ### 10. What is the difference between development and production builds in React Native? [Easy]
 
-**Sample Answer**:
-
 -   **Development builds** include debugging tools, hot reloading, and are not optimized for performance. They are larger and slower, but easier to debug.
 -   **Production builds** are optimized for performance, smaller in size, and do not include debugging tools. Enable Hermes for better performance.
 
@@ -226,7 +213,6 @@ React Native allows writing platform-specific code using:
 
 ### 11. What is the difference between React Native and native app development? [Easy]
 
-**Sample Answer**:
 React Native allows you to build mobile apps using JavaScript and React, sharing code across iOS and Android. Native development uses platform-specific languages (Swift, Kotlin). React Native offers faster development and code reuse, but may have performance trade-offs for complex features.
 
 **Connected Questions**: [#1](#1)
@@ -240,7 +226,6 @@ React Native allows you to build mobile apps using JavaScript and React, sharing
 
 ### 12. How does navigation work in React Native? [Easy]
 
-**Sample Answer**:
 Navigation in React Native is typically handled by libraries like React Navigation, which provides stack, tab, and drawer navigators. These allow users to move between screens and manage navigation history in a mobile-friendly way.
 
 **Connected Questions**: [#3](#3)
@@ -254,7 +239,6 @@ Navigation in React Native is typically handled by libraries like React Navigati
 
 ### 13. What is the role of the Metro bundler in React Native? [Easy]
 
-**Sample Answer**:
 Metro is the JavaScript bundler for React Native. It transforms and bundles JavaScript code for the app, supports hot reloading, and optimizes assets for mobile devices.
 
 **Connected Questions**: [#10](#10)
@@ -268,7 +252,6 @@ Metro is the JavaScript bundler for React Native. It transforms and bundles Java
 
 ### 14. How do you handle images and assets in React Native? [Easy]
 
-**Sample Answer**:
 Images and assets are handled using the `require` function for local files or by providing a URI for remote images. React Native optimizes images for different device resolutions and platforms.
 
 **Connected Questions**: [#7](#7)
@@ -282,7 +265,6 @@ Images and assets are handled using the `require` function for local files or by
 
 ### 15. What is the difference between controlled and uncontrolled components in React Native? [Easy]
 
-**Sample Answer**:
 Controlled components have their state managed by React, while uncontrolled components use refs to access values directly. Controlled components are preferred for complex forms and validation.
 
 **Connected Questions**: [#6](#6)
@@ -296,7 +278,6 @@ Controlled components have their state managed by React, while uncontrolled comp
 
 ### 16. How do you handle device permissions in React Native? [Easy]
 
-**Sample Answer**:
 Device permissions (camera, location, etc.) are managed using native modules or libraries like `react-native-permissions`. You must request and check permissions at runtime, handling user responses appropriately for both iOS and Android.
 
 **Connected Questions**: [#8](#8)
@@ -310,7 +291,6 @@ Device permissions (camera, location, etc.) are managed using native modules or 
 
 ### 17. What is the difference between ScrollView and FlatList? [Easy]
 
-**Sample Answer**:
 `ScrollView` renders all its children at once, suitable for small lists. `FlatList` only renders visible items, improving performance for large lists through virtualization.
 
 **Connected Questions**: [#9](#9)
@@ -324,7 +304,6 @@ Device permissions (camera, location, etc.) are managed using native modules or 
 
 ### 18. How do you handle push notifications in React Native? [Easy]
 
-**Sample Answer**:
 Push notifications are handled using services like Firebase Cloud Messaging (FCM) for Android and Apple Push Notification Service (APNs) for iOS. Libraries like `react-native-push-notification` help integrate these services and manage notification handling in the app.
 
 **Connected Questions**: [#16](#16)
@@ -338,7 +317,6 @@ Push notifications are handled using services like Firebase Cloud Messaging (FCM
 
 ### 19. How do you optimize performance in a React Native app? [Easy]
 
-**Sample Answer**:
 Optimize performance by using FlatList for large lists, minimizing re-renders, using the `useMemo` and `useCallback` hooks, and profiling with tools like Flipper. Avoid memory leaks by cleaning up listeners and timers.
 
 **Connected Questions**: [#17](#17)
@@ -352,7 +330,6 @@ Optimize performance by using FlatList for large lists, minimizing re-renders, u
 
 ### 20. How do you debug a React Native app? [Easy]
 
-**Sample Answer**:
 Debugging can be done using Flipper, Chrome DevTools, and built-in logging. Flipper provides advanced tools for inspecting app state, network requests, and performance.
 
 **Connected Questions**: [#13](#13)

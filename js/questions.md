@@ -4,8 +4,6 @@
 
 ### 1. Explain the difference between `var`, `let`, and `const` in JavaScript? [Easy]
 
-**Sample Answer**:
-
 -   `var` is function-scoped and is hoisted to the top of its function. It can be re-declared and updated. Hoisting means the declaration is moved to the top, but not the assignment.
 -   `let` is block-scoped (limited to the nearest `{}`) and is not accessible before its declaration due to the temporal dead zone. It can be updated but not re-declared in the same scope.
 -   `const` is also block-scoped and must be assigned a value at declaration. It cannot be re-assigned, but if the value is an object or array, its contents can be mutated.
@@ -26,7 +24,6 @@
 
 ### 2. What is closure in JavaScript and how does it work? [Medium]
 
-**Sample Answer**:
 A **closure** is a function that "remembers" the environment in which it was created. This means it has access to variables from its containing (outer) function, even after that function has finished executing. Closures are created every time a function is created, at function creation time.
 
 **Use Cases:**
@@ -59,8 +56,6 @@ counter(); // 2
 
 ### 3. Explain the difference between `==` and `===` operators. [Easy]
 
-**Sample Answer**:
-
 -   `==` is the loose equality operator. It compares two values for equality after converting both values to a common type (type coercion). This can lead to unexpected results (e.g., `0 == '0'` is `true`).
 -   `===` is the strict equality operator. It compares both value and type, so no type conversion occurs (e.g., `0 === '0'` is `false`).
 
@@ -78,7 +73,6 @@ counter(); // 2
 
 ### 4. What are Promises and how do they work? [Medium]
 
-**Sample Answer**:
 A **Promise** is an object representing the eventual completion or failure of an asynchronous operation. Promises have three states: pending, fulfilled, and rejected. They allow chaining of asynchronous operations using `.then()` and `.catch()`, and can be used with `async/await` for more readable code.
 
 **Example:**
@@ -106,7 +100,6 @@ fetch('https://api.example.com/data')
 
 ### 5. Explain the concept of `this` in JavaScript and how it's determined. [Hard]
 
-**Sample Answer**:
 `this` refers to the execution context of a function. Its value depends on how the function is called:
 
 -   **Global context**: In browsers, `this` is the global object (`window`).
@@ -126,7 +119,6 @@ fetch('https://api.example.com/data')
 
 ### 6. What is event delegation and why is it useful? [Medium]
 
-**Sample Answer**:
 **Event delegation** is a technique where a single event listener is added to a parent element to manage events for multiple child elements. It leverages event bubbling, where events propagate up the DOM tree. This reduces the number of event listeners, improves performance, and allows handling of dynamically added elements.
 
 **Example:**
@@ -148,8 +140,6 @@ document.getElementById('list').addEventListener('click', function (e) {
 
 ### 7. Explain the difference between `null` and `undefined` in JavaScript. [Easy]
 
-**Sample Answer**:
-
 -   `undefined` means a variable has been declared but not assigned a value, or a function does not return a value.
 -   `null` is an assignment value that represents "no value" or "empty value". It is intentionally set by the programmer.
 -   `typeof null` returns "object" (a historical bug), while `typeof undefined` returns "undefined".
@@ -169,7 +159,6 @@ document.getElementById('list').addEventListener('click', function (e) {
 
 ### 8. What are ES6 modules and how do they differ from CommonJS? [Medium]
 
-**Sample Answer**:
 **ES6 modules** use `import` and `export` syntax and are statically analyzable, enabling features like tree shaking (removing unused code). They are loaded asynchronously and support both named and default exports. **CommonJS** (used in Node.js) uses `require` and `module.exports`, is loaded synchronously, and does not support tree shaking.
 
 **Comparison:**
@@ -187,7 +176,6 @@ document.getElementById('list').addEventListener('click', function (e) {
 
 ### 9. Explain the concept of prototypal inheritance in JavaScript. [Hard]
 
-**Sample Answer**:
 **Prototypal inheritance** means objects inherit properties and methods from other objects via the prototype chain. Every object has an internal `[[Prototype]]` property, accessible via `__proto__` or `Object.getPrototypeOf`. Functions have a `prototype` property used when creating new objects with `new`.
 
 **Modern JavaScript** uses `class` syntax as syntactic sugar over prototypal inheritance.
@@ -214,7 +202,6 @@ dog.speak(); // 'Rex makes a noise.'
 
 ### 10. What is the event loop in JavaScript and how does it work? [Hard]
 
-**Sample Answer**:
 The **event loop** is the mechanism that allows JavaScript to perform non-blocking operations despite being single-threaded. It works by:
 
 -   Executing code on the call stack
@@ -237,8 +224,7 @@ The **event loop** is the mechanism that allows JavaScript to perform non-blocki
 
 ### 11. **What is event delegation in JavaScript and why is it useful?**
 
-**Sample Answer**:
-Event delegation is a technique where a single event listener is added to a parent element instead of multiple listeners to individual child elements. It leverages event bubbling, allowing efficient handling of events for dynamic or large lists of elements. This improves performance and simplifies code.
+**Event delegation** is a technique where a single event listener is added to a parent element instead of multiple listeners to individual child elements. It leverages event bubbling, allowing efficient handling of events for dynamic or large lists of elements. This improves performance and simplifies code.
 
 **Connected Questions**: [#3](#3)
 
@@ -249,8 +235,7 @@ Event delegation is a technique where a single event listener is added to a pare
 
 ### 12. **What is a closure and how is it used in JavaScript?**
 
-**Sample Answer**:
-A closure is a function that retains access to its lexical scope even when executed outside that scope. Closures are used for data privacy, function factories, and maintaining state in asynchronous code.
+A **closure** is a function that retains access to its lexical scope even when executed outside that scope. Closures are used for data privacy, function factories, and maintaining state in asynchronous code.
 
 **Connected Questions**: [#2](#2)
 
@@ -261,7 +246,6 @@ A closure is a function that retains access to its lexical scope even when execu
 
 ### 13. **What is the difference between `null` and `undefined` in JavaScript?**
 
-**Sample Answer**:
 `undefined` means a variable has been declared but not assigned a value. `null` is an assignment value that represents no value. Both are falsy, but they are used in different contexts and have different meanings in type coercion and equality checks.
 
 **Connected Questions**: [#1](#1)
@@ -274,7 +258,6 @@ A closure is a function that retains access to its lexical scope even when execu
 
 ### 14. **What is the event loop in JavaScript and how does it work?**
 
-**Sample Answer**:
 The event loop is a mechanism that allows JavaScript to perform non-blocking operations by offloading tasks to the browser or Node.js APIs. The call stack executes code, while the event loop checks the callback queue and pushes callbacks onto the stack when it's empty, enabling asynchronous behavior.
 
 **Connected Questions**: [#6](#6)
@@ -286,8 +269,7 @@ The event loop is a mechanism that allows JavaScript to perform non-blocking ope
 
 ### 15. **What are Promises and how do they improve asynchronous programming?**
 
-**Sample Answer**:
-A Promise is an object representing the eventual completion or failure of an asynchronous operation. Promises allow chaining and error handling, making asynchronous code more readable and avoiding callback hell. `async`/`await` syntax further simplifies working with Promises.
+A **Promise** is an object representing the eventual completion or failure of an asynchronous operation. Promises allow chaining and error handling, making asynchronous code more readable and avoiding callback hell. `async`/`await` syntax further simplifies working with Promises.
 
 **Connected Questions**: [#7](#7)
 
@@ -298,8 +280,7 @@ A Promise is an object representing the eventual completion or failure of an asy
 
 ### 16. **What is hoisting in JavaScript?**
 
-**Sample Answer**:
-Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. Variable and function declarations are hoisted, but only function declarations are fully initialized. Variables declared with `let` and `const` are hoisted but not initialized.
+**Hoisting** is JavaScript's default behavior of moving declarations to the top of the current scope. Variable and function declarations are hoisted, but only function declarations are fully initialized. Variables declared with `let` and `const` are hoisted but not initialized.
 
 **Connected Questions**: [#4](#4)
 
@@ -310,7 +291,6 @@ Hoisting is JavaScript's default behavior of moving declarations to the top of t
 
 ### 17. **What is the difference between `==` and `===` in JavaScript?**
 
-**Sample Answer**:
 `==` is the loose equality operator that performs type coercion before comparison. `===` is the strict equality operator that checks both value and type. Using `===` is recommended to avoid unexpected results due to type coercion.
 
 **Connected Questions**: [#1](#1), [#13](#13)
@@ -322,8 +302,7 @@ Hoisting is JavaScript's default behavior of moving declarations to the top of t
 
 ### 18. **What is a JavaScript module and how do you use ES6 modules?**
 
-**Sample Answer**:
-A JavaScript module is a file that encapsulates code and exports values for use in other files. ES6 modules use `import` and `export` syntax, enabling better code organization and encapsulation. Modules are loaded asynchronously in browsers and natively supported in modern JavaScript.
+A **JavaScript module** is a file that encapsulates code and exports values for use in other files. ES6 modules use `import` and `export` syntax, enabling better code organization and encapsulation. Modules are loaded asynchronously in browsers and natively supported in modern JavaScript.
 
 **Connected Questions**: [#8](#8)
 
@@ -334,8 +313,7 @@ A JavaScript module is a file that encapsulates code and exports values for use 
 
 ### 19. **What is debouncing and throttling in JavaScript?**
 
-**Sample Answer**:
-Debouncing and throttling are techniques to control the rate at which a function is executed. Debouncing delays execution until a pause in events, while throttling ensures a function is called at most once in a specified period. Both improve performance for events like scrolling and resizing.
+**Debouncing** and **throttling** are techniques to control the rate at which a function is executed. **Debouncing** delays execution until a pause in events, while **throttling** ensures a function is called at most once in a specified period. Both improve performance for events like scrolling and resizing.
 
 **Connected Questions**: [#11](#11)
 
@@ -346,5 +324,4 @@ Debouncing and throttling are techniques to control the rate at which a function
 
 ### 20. **What is the difference between `var`, `let`, and `const`?**
 
-**Sample Answer**:
-`var` is function-scoped and hoisted, `let` and `const` are block-scoped. `
+`var` is function-scoped and hoisted, `let` and `const` are block-scoped.
